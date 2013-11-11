@@ -1,0 +1,98 @@
+\documentclass{sig-alternate}
+
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{color}
+\usepackage{balance}
+\makeatletter
+\newif\if@restonecol
+\makeatother
+\let\algorithm\relax
+\let\endalgorithm\relax
+\usepackage[lined,algonl,boxed]{algorithm2e}%\usepackage{mathbb}
+
+\newcommand{\reminder}[1]{\textbf{\color{red}[** #1 **]}}  % to fix
+\newcommand{\hide}[1]{} %hide
+\newcommand{\vpara}[1]{\vspace{0.08in}\noindent\textbf{#1 }}
+\newcommand{\para}[1]{\vspace{0.01in}\noindent\textbf{#1 }}
+\newcommand{\secref}[1]{Section~\ref{#1}} %section reference
+\newcommand{\Real}{\ensuremath{\mathbb{R}}}  % Real numbers
+\newcommand{\figref}[1]{Figure~\ref{#1}} %section reference
+\newcommand{\beq}[1]{\vspace{-0.02in}\begin{equation}#1\end{equation}\vspace{-0.02in}}
+\newcommand{\beqn}[1]{\vspace{-0.03in}\begin{eqnarray}#1\end{eqnarray}\vspace{-0.03in}}
+\newcommand{\beal}[1]{\vspace{-0.03in}\begin{align}#1\end{align}\vspace{-0.03in}}
+\newcommand{\besp}[1]{\begin{split}#1\end{split}}
+\newcommand{\remark}[1]{\textbf{\color{red}**#1**}}
+%\newcommand{\eeq}[1]{\end{equation}\normalsize}
+
+\newdef{definition}{Definition}
+\newdef{problem}{Problem}
+\newdef{theorem}{Theorem}
+\newtheorem{hypothesis}{Hypothesis}
+
+\newfont{\mycrnotice}{ptmr8t at 7pt}
+\newfont{\myconfname}{ptmri8t at 7pt}
+\let\crnotice\mycrnotice%
+\let\confname\myconfname%
+
+
+\begin{document}
+
+\title{Null Models For Social Networks}
+
+\numberofauthors{2}
+%
+% Put no more than the first THREE authors in the \author command
+
+% NOTE: All authors should be on the first page. For instructions
+% for more than 3 authors, see:
+% http://www.acm.org/sigs/pubs/proceed/sigfaq.htm#a18
+\author{
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+%% e-mail address with \email.
+\alignauthor Jessica Su\\
+       \affaddr{Department of Computer Science}\\
+       \affaddr{Stanford University}\\
+       \email{jtysu@stanford.edu}
+\alignauthor Sen Wu\\
+       \affaddr{Department of Computer Science}\\
+       \affaddr{Stanford University}\\
+       \email{senwu@stanford.edu}
+}
+
+\maketitle
+\input{abstract.tex}
+
+%\vspace{-0.02in}
+% A category with only the three required fields
+\category{J.4}{Social and Behavioral Sciences}{Miscellaneous}
+
+%\category{H.4.m}{Information Systems}{Miscellaneous}
+%\vspace{-0.08in}
+\terms{Algorithms, Experimentation}
+%\vspace{-0.08in}
+\keywords{Social networks}
+
+
+\input{intro.tex}
+\input{problem.tex}
+\input{observations.tex}
+\input{approach.tex}
+\input{exp.tex}
+\input{related.tex}
+\input{conclusion.tex}
+
+\bibliographystyle{abbrv}
+\bibliography{references}  % sigproc.bib is the name of the Bibliography in this case
+
+%\input{appendix.tex}
+
+\end{document}
+
