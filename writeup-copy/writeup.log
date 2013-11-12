@@ -1,0 +1,566 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  12 NOV 2013 15:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**writeup.tex
+(./writeup.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(./writeup.aux)
+\openout1 = `writeup.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count100
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen115
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+
+LaTeX Warning: No \author given.
+
+Package epstopdf Info: Source file: <motifs.eps>
+(epstopdf)                    date: 2013-11-12 14:52:43
+(epstopdf)                    size: 874750 bytes
+(epstopdf)             Output file: <motifs-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 14:52:59
+(epstopdf)                    size: 161764 bytes
+(epstopdf)             Command: <repstopdf --outfile=motifs-eps-converted-to.pd
+f motifs.eps>
+(epstopdf)             \includegraphics on input line 19.
+Package epstopdf Info: Output file is already uptodate.
+<motifs-eps-converted-to.pdf, id=1, 648.4225pt x 331.2375pt>
+File: motifs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use motifs-eps-converted-to.pdf>
+Package pdftex.def Info: motifs-eps-converted-to.pdf used on input line 19.
+(pdftex.def)             Requested size: 324.21045pt x 165.61833pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+[1
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2 <./motifs-eps-converted-to.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 54--71
+
+ []
+
+
+Overfull \hbox (30.3479pt too wide) in paragraph at lines 54--71
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--71
+
+ []
+
+<acceptedOnly-aut-as19971108.png, id=41, 578.16pt x 433.62pt>
+File: acceptedOnly-aut-as19971108.png Graphic file (type png)
+
+<use acceptedOnly-aut-as19971108.png>
+Package pdftex.def Info: acceptedOnly-aut-as19971108.png used on input line 73.
+
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 73--74
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+[4] <acceptedOnly-aut-as19990628.png, id=46, 578.16pt x 433.62pt>
+File: acceptedOnly-aut-as19990628.png Graphic file (type png)
+
+<use acceptedOnly-aut-as19990628.png>
+Package pdftex.def Info: acceptedOnly-aut-as19990628.png used on input line 78.
+
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 78--79
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+<acceptedOnly-cit-scimet.png, id=47, 578.16pt x 433.62pt>
+File: acceptedOnly-cit-scimet.png Graphic file (type png)
+
+<use acceptedOnly-cit-scimet.png>
+Package pdftex.def Info: acceptedOnly-cit-scimet.png used on input line 83.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 83--84
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+<acceptedOnly-col-ca-GrQc.png, id=48, 578.16pt x 433.62pt>
+File: acceptedOnly-col-ca-GrQc.png Graphic file (type png)
+
+<use acceptedOnly-col-ca-GrQc.png>
+Package pdftex.def Info: acceptedOnly-col-ca-GrQc.png used on input line 88.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 88--89
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+<acceptedOnly-col-netscience.png, id=49, 578.16pt x 433.62pt>
+File: acceptedOnly-col-netscience.png Graphic file (type png)
+
+<use acceptedOnly-col-netscience.png>
+Package pdftex.def Info: acceptedOnly-col-netscience.png used on input line 93.
+
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 93--94
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+<acceptedOnly-met-HI.png, id=50, 578.16pt x 433.62pt>
+File: acceptedOnly-met-HI.png Graphic file (type png)
+
+<use acceptedOnly-met-HI.png>
+Package pdftex.def Info: acceptedOnly-met-HI.png used on input line 98.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 98--99
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+<acceptedOnly-ppi-ppiall.png, id=51, 578.16pt x 433.62pt>
+File: acceptedOnly-ppi-ppiall.png Graphic file (type png)
+
+<use acceptedOnly-ppi-ppiall.png>
+Package pdftex.def Info: acceptedOnly-ppi-ppiall.png used on input line 103.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 103--104
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+<acceptedOnly-ppi-ppiapms.png, id=52, 578.16pt x 433.62pt>
+File: acceptedOnly-ppi-ppiapms.png Graphic file (type png)
+
+<use acceptedOnly-ppi-ppiapms.png>
+Package pdftex.def Info: acceptedOnly-ppi-ppiapms.png used on input line 108.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 108--109
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+<acceptedOnly-pwr-power.png, id=53, 578.16pt x 433.62pt>
+File: acceptedOnly-pwr-power.png Graphic file (type png)
+
+<use acceptedOnly-pwr-power.png>
+Package pdftex.def Info: acceptedOnly-pwr-power.png used on input line 113.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 113--114
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+<Paccept-aut-as19971108.png, id=54, 578.16pt x 433.62pt>
+File: Paccept-aut-as19971108.png Graphic file (type png)
+
+<use Paccept-aut-as19971108.png>
+Package pdftex.def Info: Paccept-aut-as19971108.png used on input line 118.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 118--119
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+<Paccept-aut-as19990628.png, id=55, 578.16pt x 433.62pt>
+File: Paccept-aut-as19990628.png Graphic file (type png)
+
+<use Paccept-aut-as19990628.png>
+Package pdftex.def Info: Paccept-aut-as19990628.png used on input line 122.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 122--123
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+<Paccept-cit-scimet.png, id=56, 578.16pt x 433.62pt>
+File: Paccept-cit-scimet.png Graphic file (type png)
+
+<use Paccept-cit-scimet.png>
+Package pdftex.def Info: Paccept-cit-scimet.png used on input line 126.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 126--127
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+<Paccept-col-ca-GrQc.png, id=57, 578.16pt x 433.62pt>
+File: Paccept-col-ca-GrQc.png Graphic file (type png)
+
+<use Paccept-col-ca-GrQc.png>
+Package pdftex.def Info: Paccept-col-ca-GrQc.png used on input line 131.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 131--132
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+<Paccept-col-netscience.png, id=58, 578.16pt x 433.62pt>
+File: Paccept-col-netscience.png Graphic file (type png)
+
+<use Paccept-col-netscience.png>
+Package pdftex.def Info: Paccept-col-netscience.png used on input line 136.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 136--137
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+<Paccept-met-HI.png, id=59, 578.16pt x 433.62pt>
+File: Paccept-met-HI.png Graphic file (type png)
+ <use Paccept-met-HI.png>
+Package pdftex.def Info: Paccept-met-HI.png used on input line 141.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 141--142
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+<Paccept-ppi-ppiall.png, id=60, 578.16pt x 433.62pt>
+File: Paccept-ppi-ppiall.png Graphic file (type png)
+
+<use Paccept-ppi-ppiall.png>
+Package pdftex.def Info: Paccept-ppi-ppiall.png used on input line 146.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 146--147
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+<Paccept-ppi-ppiapms.png, id=61, 578.16pt x 433.62pt>
+File: Paccept-ppi-ppiapms.png Graphic file (type png)
+
+<use Paccept-ppi-ppiapms.png>
+Package pdftex.def Info: Paccept-ppi-ppiapms.png used on input line 151.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 151--152
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+<Paccept-pwr-power.png, id=62, 578.16pt x 433.62pt>
+File: Paccept-pwr-power.png Graphic file (type png)
+
+<use Paccept-pwr-power.png>
+Package pdftex.def Info: Paccept-pwr-power.png used on input line 156.
+(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+Overfull \hbox (43.61893pt too wide) in paragraph at lines 156--157
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+[5] [6 <./acceptedOnly-aut-as19971108.png>] [7 <./acceptedOnly-aut-as19990628.p
+ng>] [8 <./acceptedOnly-cit-scimet.png>] [9 <./acceptedOnly-col-ca-GrQc.png>]
+[10 <./acceptedOnly-col-netscience.png>] [11 <./acceptedOnly-met-HI.png>]
+[12 <./acceptedOnly-ppi-ppiall.png>] [13 <./acceptedOnly-ppi-ppiapms.png>]
+[14 <./acceptedOnly-pwr-power.png>] [15 <./Paccept-aut-as19971108.png>]
+[16 <./Paccept-aut-as19990628.png>] [17 <./Paccept-cit-scimet.png>] [18 <./Pacc
+ept-col-ca-GrQc.png>] [19 <./Paccept-col-netscience.png>] [20 <./Paccept-met-HI
+.png>] [21 <./Paccept-ppi-ppiall.png>] [22 <./Paccept-ppi-ppiapms.png>]
+[23 <./Paccept-pwr-power.png>] (./writeup.aux) ) 
+Here is how much of TeX's memory you used:
+ 2203 strings out of 493315
+ 31348 string characters out of 6137904
+ 93519 words of memory out of 5000000
+ 5625 multiletter control sequences out of 15000+600000
+ 9626 words of font info for 35 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 37i,6n,23p,714b,215s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb>
+Output written on writeup.pdf (23 pages, 1658352 bytes).
+PDF statistics:
+ 168 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+
