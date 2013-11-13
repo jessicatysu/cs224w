@@ -1,15 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  12 NOV 2013 15:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 NOV 2013 21:19
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **writeup.tex
 (./writeup.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,41 +33,41 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 211.
 \uproot@=\count88
 \leftroot@=\count89
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 307.
 \classnum@=\count90
 \DOTSCASE@=\count91
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count92
 \c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
@@ -79,34 +88,34 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count99
@@ -130,7 +139,7 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
 \scratchdimen=\dimen114
@@ -143,15 +152,15 @@ LaTeX Font Info:    ... okay on input line 8.
 \MPnumerator=\count104
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks21
-) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -160,22 +169,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -187,7 +196,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -217,11 +226,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
 [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2 <./motifs-eps-converted-to.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -241,12 +250,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--71
 
  []
 
-<acceptedOnly-aut-as19971108.png, id=41, 578.16pt x 433.62pt>
-File: acceptedOnly-aut-as19971108.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-aut-as19971108.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 36050 bytes
+(epstopdf)             Output file: <acceptedOnly-aut-as19971108-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-aut-as1997110
+8-eps-converted-to.pdf acceptedOnly-aut-as19971108.eps>
+(epstopdf)             \includegraphics on input line 73.
+runsystem(repstopdf --outfile=acceptedOnly-aut-as19971108-eps-converted-to.pdf 
+acceptedOnly-aut-as19971108.eps)...executed safely (allowed).
 
-<use acceptedOnly-aut-as19971108.png>
-Package pdftex.def Info: acceptedOnly-aut-as19971108.png used on input line 73.
+Package epstopdf Info: Result file: <acceptedOnly-aut-as19971108-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:24
+(epstopdf)                    size: 25351 bytes.
 
+<acceptedOnly-aut-as19971108-eps-converted-to.pdf, id=41, 578.16pt x 433.62pt>
+File: acceptedOnly-aut-as19971108-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-aut-as19971108-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-aut-as19971108-eps-converted-to.pdf used 
+on input line 73.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 73--74
@@ -258,12 +283,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[4] <acceptedOnly-aut-as19990628.png, id=46, 578.16pt x 433.62pt>
-File: acceptedOnly-aut-as19990628.png Graphic file (type png)
+[4]
+Package epstopdf Info: Source file: <acceptedOnly-aut-as19990628.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 36114 bytes
+(epstopdf)             Output file: <acceptedOnly-aut-as19990628-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-aut-as1999062
+8-eps-converted-to.pdf acceptedOnly-aut-as19990628.eps>
+(epstopdf)             \includegraphics on input line 78.
+runsystem(repstopdf --outfile=acceptedOnly-aut-as19990628-eps-converted-to.pdf 
+acceptedOnly-aut-as19990628.eps)...executed safely (allowed).
 
-<use acceptedOnly-aut-as19990628.png>
-Package pdftex.def Info: acceptedOnly-aut-as19990628.png used on input line 78.
+Package epstopdf Info: Result file: <acceptedOnly-aut-as19990628-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:25
+(epstopdf)                    size: 25440 bytes.
 
+<acceptedOnly-aut-as19990628-eps-converted-to.pdf, id=45, 578.16pt x 433.62pt>
+File: acceptedOnly-aut-as19990628-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-aut-as19990628-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-aut-as19990628-eps-converted-to.pdf used 
+on input line 78.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 78--79
@@ -275,11 +317,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-<acceptedOnly-cit-scimet.png, id=47, 578.16pt x 433.62pt>
-File: acceptedOnly-cit-scimet.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-cit-scimet.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 34954 bytes
+(epstopdf)             Output file: <acceptedOnly-cit-scimet-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-cit-scimet-ep
+s-converted-to.pdf acceptedOnly-cit-scimet.eps>
+(epstopdf)             \includegraphics on input line 83.
+runsystem(repstopdf --outfile=acceptedOnly-cit-scimet-eps-converted-to.pdf acce
+ptedOnly-cit-scimet.eps)...executed safely (allowed).
 
-<use acceptedOnly-cit-scimet.png>
-Package pdftex.def Info: acceptedOnly-cit-scimet.png used on input line 83.
+Package epstopdf Info: Result file: <acceptedOnly-cit-scimet-eps-converted-to.p
+df>
+(epstopdf)                    date: 2013-11-12 21:19:26
+(epstopdf)                    size: 22506 bytes.
+<acceptedOnly-cit-scimet-eps-converted-to.pdf, id=46, 578.16pt x 433.62pt>
+File: acceptedOnly-cit-scimet-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-cit-scimet-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-cit-scimet-eps-converted-to.pdf used on i
+nput line 83.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 83--84
@@ -291,11 +349,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-<acceptedOnly-col-ca-GrQc.png, id=48, 578.16pt x 433.62pt>
-File: acceptedOnly-col-ca-GrQc.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-col-ca-GrQc.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 36204 bytes
+(epstopdf)             Output file: <acceptedOnly-col-ca-GrQc-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-col-ca-GrQc-e
+ps-converted-to.pdf acceptedOnly-col-ca-GrQc.eps>
+(epstopdf)             \includegraphics on input line 88.
+runsystem(repstopdf --outfile=acceptedOnly-col-ca-GrQc-eps-converted-to.pdf acc
+eptedOnly-col-ca-GrQc.eps)...executed safely (allowed).
 
-<use acceptedOnly-col-ca-GrQc.png>
-Package pdftex.def Info: acceptedOnly-col-ca-GrQc.png used on input line 88.
+Package epstopdf Info: Result file: <acceptedOnly-col-ca-GrQc-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2013-11-12 21:19:26
+(epstopdf)                    size: 25637 bytes.
+<acceptedOnly-col-ca-GrQc-eps-converted-to.pdf, id=47, 578.16pt x 433.62pt>
+File: acceptedOnly-col-ca-GrQc-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-col-ca-GrQc-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-col-ca-GrQc-eps-converted-to.pdf used on 
+input line 88.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 88--89
@@ -307,12 +381,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-<acceptedOnly-col-netscience.png, id=49, 578.16pt x 433.62pt>
-File: acceptedOnly-col-netscience.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-col-netscience.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 33917 bytes
+(epstopdf)             Output file: <acceptedOnly-col-netscience-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-col-netscienc
+e-eps-converted-to.pdf acceptedOnly-col-netscience.eps>
+(epstopdf)             \includegraphics on input line 93.
+runsystem(repstopdf --outfile=acceptedOnly-col-netscience-eps-converted-to.pdf 
+acceptedOnly-col-netscience.eps)...executed safely (allowed).
 
-<use acceptedOnly-col-netscience.png>
-Package pdftex.def Info: acceptedOnly-col-netscience.png used on input line 93.
+Package epstopdf Info: Result file: <acceptedOnly-col-netscience-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:27
+(epstopdf)                    size: 23266 bytes.
 
+<acceptedOnly-col-netscience-eps-converted-to.pdf, id=48, 578.16pt x 433.62pt>
+File: acceptedOnly-col-netscience-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-col-netscience-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-col-netscience-eps-converted-to.pdf used 
+on input line 93.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 93--94
@@ -324,11 +414,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-<acceptedOnly-met-HI.png, id=50, 578.16pt x 433.62pt>
-File: acceptedOnly-met-HI.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-met-HI.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 36472 bytes
+(epstopdf)             Output file: <acceptedOnly-met-HI-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-met-HI-eps-co
+nverted-to.pdf acceptedOnly-met-HI.eps>
+(epstopdf)             \includegraphics on input line 98.
+runsystem(repstopdf --outfile=acceptedOnly-met-HI-eps-converted-to.pdf accepted
+Only-met-HI.eps)...executed safely (allowed).
 
-<use acceptedOnly-met-HI.png>
-Package pdftex.def Info: acceptedOnly-met-HI.png used on input line 98.
+Package epstopdf Info: Result file: <acceptedOnly-met-HI-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:27
+(epstopdf)                    size: 22924 bytes.
+<acceptedOnly-met-HI-eps-converted-to.pdf, id=49, 578.16pt x 433.62pt>
+File: acceptedOnly-met-HI-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-met-HI-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-met-HI-eps-converted-to.pdf used on input
+ line 98.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 98--99
@@ -340,11 +444,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-<acceptedOnly-ppi-ppiall.png, id=51, 578.16pt x 433.62pt>
-File: acceptedOnly-ppi-ppiall.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-ppi-ppiall.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 36665 bytes
+(epstopdf)             Output file: <acceptedOnly-ppi-ppiall-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-ppi-ppiall-ep
+s-converted-to.pdf acceptedOnly-ppi-ppiall.eps>
+(epstopdf)             \includegraphics on input line 103.
+runsystem(repstopdf --outfile=acceptedOnly-ppi-ppiall-eps-converted-to.pdf acce
+ptedOnly-ppi-ppiall.eps)...executed safely (allowed).
 
-<use acceptedOnly-ppi-ppiall.png>
-Package pdftex.def Info: acceptedOnly-ppi-ppiall.png used on input line 103.
+Package epstopdf Info: Result file: <acceptedOnly-ppi-ppiall-eps-converted-to.p
+df>
+(epstopdf)                    date: 2013-11-12 21:19:28
+(epstopdf)                    size: 25687 bytes.
+<acceptedOnly-ppi-ppiall-eps-converted-to.pdf, id=50, 578.16pt x 433.62pt>
+File: acceptedOnly-ppi-ppiall-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-ppi-ppiall-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-ppi-ppiall-eps-converted-to.pdf used on i
+nput line 103.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 103--104
@@ -356,11 +476,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<acceptedOnly-ppi-ppiapms.png, id=52, 578.16pt x 433.62pt>
-File: acceptedOnly-ppi-ppiapms.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-ppi-ppiapms.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 36652 bytes
+(epstopdf)             Output file: <acceptedOnly-ppi-ppiapms-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-ppi-ppiapms-e
+ps-converted-to.pdf acceptedOnly-ppi-ppiapms.eps>
+(epstopdf)             \includegraphics on input line 108.
+runsystem(repstopdf --outfile=acceptedOnly-ppi-ppiapms-eps-converted-to.pdf acc
+eptedOnly-ppi-ppiapms.eps)...executed safely (allowed).
 
-<use acceptedOnly-ppi-ppiapms.png>
-Package pdftex.def Info: acceptedOnly-ppi-ppiapms.png used on input line 108.
+Package epstopdf Info: Result file: <acceptedOnly-ppi-ppiapms-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2013-11-12 21:19:29
+(epstopdf)                    size: 25510 bytes.
+<acceptedOnly-ppi-ppiapms-eps-converted-to.pdf, id=51, 578.16pt x 433.62pt>
+File: acceptedOnly-ppi-ppiapms-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-ppi-ppiapms-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-ppi-ppiapms-eps-converted-to.pdf used on 
+input line 108.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 108--109
@@ -372,11 +508,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-<acceptedOnly-pwr-power.png, id=53, 578.16pt x 433.62pt>
-File: acceptedOnly-pwr-power.png Graphic file (type png)
+Package epstopdf Info: Source file: <acceptedOnly-pwr-power.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 35449 bytes
+(epstopdf)             Output file: <acceptedOnly-pwr-power-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=acceptedOnly-pwr-power-eps
+-converted-to.pdf acceptedOnly-pwr-power.eps>
+(epstopdf)             \includegraphics on input line 113.
+runsystem(repstopdf --outfile=acceptedOnly-pwr-power-eps-converted-to.pdf accep
+tedOnly-pwr-power.eps)...executed safely (allowed).
 
-<use acceptedOnly-pwr-power.png>
-Package pdftex.def Info: acceptedOnly-pwr-power.png used on input line 113.
+Package epstopdf Info: Result file: <acceptedOnly-pwr-power-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-11-12 21:19:29
+(epstopdf)                    size: 24812 bytes.
+<acceptedOnly-pwr-power-eps-converted-to.pdf, id=52, 578.16pt x 433.62pt>
+File: acceptedOnly-pwr-power-eps-converted-to.pdf Graphic file (type pdf)
+
+<use acceptedOnly-pwr-power-eps-converted-to.pdf>
+Package pdftex.def Info: acceptedOnly-pwr-power-eps-converted-to.pdf used on in
+put line 113.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 113--114
@@ -388,11 +540,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-<Paccept-aut-as19971108.png, id=54, 578.16pt x 433.62pt>
-File: Paccept-aut-as19971108.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-aut-as19971108.eps>
+(epstopdf)                    date: 2013-11-12 21:18:16
+(epstopdf)                    size: 32119 bytes
+(epstopdf)             Output file: <Paccept-aut-as19971108-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-aut-as19971108-eps
+-converted-to.pdf Paccept-aut-as19971108.eps>
+(epstopdf)             \includegraphics on input line 118.
+runsystem(repstopdf --outfile=Paccept-aut-as19971108-eps-converted-to.pdf Pacce
+pt-aut-as19971108.eps)...executed safely (allowed).
 
-<use Paccept-aut-as19971108.png>
-Package pdftex.def Info: Paccept-aut-as19971108.png used on input line 118.
+Package epstopdf Info: Result file: <Paccept-aut-as19971108-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-11-12 21:19:30
+(epstopdf)                    size: 20148 bytes.
+<Paccept-aut-as19971108-eps-converted-to.pdf, id=53, 578.16pt x 433.62pt>
+File: Paccept-aut-as19971108-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-aut-as19971108-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-aut-as19971108-eps-converted-to.pdf used on in
+put line 118.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 118--119
@@ -404,11 +572,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-<Paccept-aut-as19990628.png, id=55, 578.16pt x 433.62pt>
-File: Paccept-aut-as19990628.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-aut-as19990628.eps>
+(epstopdf)                    date: 2013-11-12 21:18:16
+(epstopdf)                    size: 32215 bytes
+(epstopdf)             Output file: <Paccept-aut-as19990628-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-aut-as19990628-eps
+-converted-to.pdf Paccept-aut-as19990628.eps>
+(epstopdf)             \includegraphics on input line 122.
+runsystem(repstopdf --outfile=Paccept-aut-as19990628-eps-converted-to.pdf Pacce
+pt-aut-as19990628.eps)...executed safely (allowed).
 
-<use Paccept-aut-as19990628.png>
-Package pdftex.def Info: Paccept-aut-as19990628.png used on input line 122.
+Package epstopdf Info: Result file: <Paccept-aut-as19990628-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-11-12 21:19:31
+(epstopdf)                    size: 21697 bytes.
+<Paccept-aut-as19990628-eps-converted-to.pdf, id=54, 578.16pt x 433.62pt>
+File: Paccept-aut-as19990628-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-aut-as19990628-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-aut-as19990628-eps-converted-to.pdf used on in
+put line 122.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 122--123
@@ -420,11 +604,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-<Paccept-cit-scimet.png, id=56, 578.16pt x 433.62pt>
-File: Paccept-cit-scimet.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-cit-scimet.eps>
+(epstopdf)                    date: 2013-11-12 21:18:16
+(epstopdf)                    size: 33802 bytes
+(epstopdf)             Output file: <Paccept-cit-scimet-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-cit-scimet-eps-con
+verted-to.pdf Paccept-cit-scimet.eps>
+(epstopdf)             \includegraphics on input line 126.
+runsystem(repstopdf --outfile=Paccept-cit-scimet-eps-converted-to.pdf Paccept-c
+it-scimet.eps)...executed safely (allowed).
 
-<use Paccept-cit-scimet.png>
-Package pdftex.def Info: Paccept-cit-scimet.png used on input line 126.
+Package epstopdf Info: Result file: <Paccept-cit-scimet-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:31
+(epstopdf)                    size: 21184 bytes.
+<Paccept-cit-scimet-eps-converted-to.pdf, id=55, 578.16pt x 433.62pt>
+File: Paccept-cit-scimet-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-cit-scimet-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-cit-scimet-eps-converted-to.pdf used on input 
+line 126.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 126--127
@@ -436,11 +634,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-<Paccept-col-ca-GrQc.png, id=57, 578.16pt x 433.62pt>
-File: Paccept-col-ca-GrQc.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-col-ca-GrQc.eps>
+(epstopdf)                    date: 2013-11-12 21:18:16
+(epstopdf)                    size: 31784 bytes
+(epstopdf)             Output file: <Paccept-col-ca-GrQc-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-col-ca-GrQc-eps-co
+nverted-to.pdf Paccept-col-ca-GrQc.eps>
+(epstopdf)             \includegraphics on input line 131.
+runsystem(repstopdf --outfile=Paccept-col-ca-GrQc-eps-converted-to.pdf Paccept-
+col-ca-GrQc.eps)...executed safely (allowed).
 
-<use Paccept-col-ca-GrQc.png>
-Package pdftex.def Info: Paccept-col-ca-GrQc.png used on input line 131.
+Package epstopdf Info: Result file: <Paccept-col-ca-GrQc-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:32
+(epstopdf)                    size: 19838 bytes.
+<Paccept-col-ca-GrQc-eps-converted-to.pdf, id=56, 578.16pt x 433.62pt>
+File: Paccept-col-ca-GrQc-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-col-ca-GrQc-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-col-ca-GrQc-eps-converted-to.pdf used on input
+ line 131.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 131--132
@@ -452,11 +664,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
-<Paccept-col-netscience.png, id=58, 578.16pt x 433.62pt>
-File: Paccept-col-netscience.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-col-netscience.eps>
+(epstopdf)                    date: 2013-11-12 21:18:16
+(epstopdf)                    size: 30748 bytes
+(epstopdf)             Output file: <Paccept-col-netscience-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-col-netscience-eps
+-converted-to.pdf Paccept-col-netscience.eps>
+(epstopdf)             \includegraphics on input line 136.
+runsystem(repstopdf --outfile=Paccept-col-netscience-eps-converted-to.pdf Pacce
+pt-col-netscience.eps)...executed safely (allowed).
 
-<use Paccept-col-netscience.png>
-Package pdftex.def Info: Paccept-col-netscience.png used on input line 136.
+Package epstopdf Info: Result file: <Paccept-col-netscience-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-11-12 21:19:32
+(epstopdf)                    size: 17025 bytes.
+<Paccept-col-netscience-eps-converted-to.pdf, id=57, 578.16pt x 433.62pt>
+File: Paccept-col-netscience-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-col-netscience-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-col-netscience-eps-converted-to.pdf used on in
+put line 136.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 136--137
@@ -468,10 +696,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-<Paccept-met-HI.png, id=59, 578.16pt x 433.62pt>
-File: Paccept-met-HI.png Graphic file (type png)
- <use Paccept-met-HI.png>
-Package pdftex.def Info: Paccept-met-HI.png used on input line 141.
+Package epstopdf Info: Source file: <Paccept-met-HI.eps>
+(epstopdf)                    date: 2013-11-12 21:18:16
+(epstopdf)                    size: 30999 bytes
+(epstopdf)             Output file: <Paccept-met-HI-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-met-HI-eps-convert
+ed-to.pdf Paccept-met-HI.eps>
+(epstopdf)             \includegraphics on input line 141.
+runsystem(repstopdf --outfile=Paccept-met-HI-eps-converted-to.pdf Paccept-met-H
+I.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <Paccept-met-HI-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:33
+(epstopdf)                    size: 21346 bytes.
+<Paccept-met-HI-eps-converted-to.pdf, id=58, 578.16pt x 433.62pt>
+File: Paccept-met-HI-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-met-HI-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-met-HI-eps-converted-to.pdf used on input line
+ 141.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 141--142
@@ -483,11 +726,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
-<Paccept-ppi-ppiall.png, id=60, 578.16pt x 433.62pt>
-File: Paccept-ppi-ppiall.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-ppi-ppiall.eps>
+(epstopdf)                    date: 2013-11-12 21:18:16
+(epstopdf)                    size: 31945 bytes
+(epstopdf)             Output file: <Paccept-ppi-ppiall-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-ppi-ppiall-eps-con
+verted-to.pdf Paccept-ppi-ppiall.eps>
+(epstopdf)             \includegraphics on input line 146.
+runsystem(repstopdf --outfile=Paccept-ppi-ppiall-eps-converted-to.pdf Paccept-p
+pi-ppiall.eps)...executed safely (allowed).
 
-<use Paccept-ppi-ppiall.png>
-Package pdftex.def Info: Paccept-ppi-ppiall.png used on input line 146.
+Package epstopdf Info: Result file: <Paccept-ppi-ppiall-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:34
+(epstopdf)                    size: 21344 bytes.
+<Paccept-ppi-ppiall-eps-converted-to.pdf, id=59, 578.16pt x 433.62pt>
+File: Paccept-ppi-ppiall-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-ppi-ppiall-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-ppi-ppiall-eps-converted-to.pdf used on input 
+line 146.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 146--147
@@ -499,11 +756,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-<Paccept-ppi-ppiapms.png, id=61, 578.16pt x 433.62pt>
-File: Paccept-ppi-ppiapms.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-ppi-ppiapms.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 32322 bytes
+(epstopdf)             Output file: <Paccept-ppi-ppiapms-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-ppi-ppiapms-eps-co
+nverted-to.pdf Paccept-ppi-ppiapms.eps>
+(epstopdf)             \includegraphics on input line 151.
+runsystem(repstopdf --outfile=Paccept-ppi-ppiapms-eps-converted-to.pdf Paccept-
+ppi-ppiapms.eps)...executed safely (allowed).
 
-<use Paccept-ppi-ppiapms.png>
-Package pdftex.def Info: Paccept-ppi-ppiapms.png used on input line 151.
+Package epstopdf Info: Result file: <Paccept-ppi-ppiapms-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:34
+(epstopdf)                    size: 21211 bytes.
+<Paccept-ppi-ppiapms-eps-converted-to.pdf, id=60, 578.16pt x 433.62pt>
+File: Paccept-ppi-ppiapms-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-ppi-ppiapms-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-ppi-ppiapms-eps-converted-to.pdf used on input
+ line 151.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 151--152
@@ -515,11 +786,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-<Paccept-pwr-power.png, id=62, 578.16pt x 433.62pt>
-File: Paccept-pwr-power.png Graphic file (type png)
+Package epstopdf Info: Source file: <Paccept-pwr-power.eps>
+(epstopdf)                    date: 2013-11-12 21:18:17
+(epstopdf)                    size: 30488 bytes
+(epstopdf)             Output file: <Paccept-pwr-power-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=Paccept-pwr-power-eps-conv
+erted-to.pdf Paccept-pwr-power.eps>
+(epstopdf)             \includegraphics on input line 156.
+runsystem(repstopdf --outfile=Paccept-pwr-power-eps-converted-to.pdf Paccept-pw
+r-power.eps)...executed safely (allowed).
 
-<use Paccept-pwr-power.png>
-Package pdftex.def Info: Paccept-pwr-power.png used on input line 156.
+Package epstopdf Info: Result file: <Paccept-pwr-power-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-11-12 21:19:35
+(epstopdf)                    size: 17109 bytes.
+<Paccept-pwr-power-eps-converted-to.pdf, id=61, 578.16pt x 433.62pt>
+File: Paccept-pwr-power-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Paccept-pwr-power-eps-converted-to.pdf>
+Package pdftex.def Info: Paccept-pwr-power-eps-converted-to.pdf used on input l
+ine 156.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 Overfull \hbox (43.61893pt too wide) in paragraph at lines 156--157
@@ -531,36 +816,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-[5] [6 <./acceptedOnly-aut-as19971108.png>] [7 <./acceptedOnly-aut-as19990628.p
-ng>] [8 <./acceptedOnly-cit-scimet.png>] [9 <./acceptedOnly-col-ca-GrQc.png>]
-[10 <./acceptedOnly-col-netscience.png>] [11 <./acceptedOnly-met-HI.png>]
-[12 <./acceptedOnly-ppi-ppiall.png>] [13 <./acceptedOnly-ppi-ppiapms.png>]
-[14 <./acceptedOnly-pwr-power.png>] [15 <./Paccept-aut-as19971108.png>]
-[16 <./Paccept-aut-as19990628.png>] [17 <./Paccept-cit-scimet.png>] [18 <./Pacc
-ept-col-ca-GrQc.png>] [19 <./Paccept-col-netscience.png>] [20 <./Paccept-met-HI
-.png>] [21 <./Paccept-ppi-ppiall.png>] [22 <./Paccept-ppi-ppiapms.png>]
-[23 <./Paccept-pwr-power.png>] (./writeup.aux) ) 
+[5] [6 <./acceptedOnly-aut-as19971108-eps-converted-to.pdf>] [7 <./acceptedOnly
+-aut-as19990628-eps-converted-to.pdf>] [8 <./acceptedOnly-cit-scimet-eps-conver
+ted-to.pdf>] [9 <./acceptedOnly-col-ca-GrQc-eps-converted-to.pdf>] [10 <./accep
+tedOnly-col-netscience-eps-converted-to.pdf>] [11 <./acceptedOnly-met-HI-eps-co
+nverted-to.pdf>] [12 <./acceptedOnly-ppi-ppiall-eps-converted-to.pdf>] [13 <./a
+cceptedOnly-ppi-ppiapms-eps-converted-to.pdf>] [14 <./acceptedOnly-pwr-power-ep
+s-converted-to.pdf>] [15 <./Paccept-aut-as19971108-eps-converted-to.pdf>]
+[16 <./Paccept-aut-as19990628-eps-converted-to.pdf>] [17 <./Paccept-cit-scimet-
+eps-converted-to.pdf>] [18 <./Paccept-col-ca-GrQc-eps-converted-to.pdf>]
+[19 <./Paccept-col-netscience-eps-converted-to.pdf>] [20 <./Paccept-met-HI-eps-
+converted-to.pdf>] [21 <./Paccept-ppi-ppiall-eps-converted-to.pdf>] [22 <./Pacc
+ept-ppi-ppiapms-eps-converted-to.pdf>] [23 <./Paccept-pwr-power-eps-converted-t
+o.pdf>] (./writeup.aux) ) 
 Here is how much of TeX's memory you used:
- 2203 strings out of 493315
- 31348 string characters out of 6137904
- 93519 words of memory out of 5000000
- 5625 multiletter control sequences out of 15000+600000
- 9626 words of font info for 35 fonts, out of 8000000 for 9000
+ 2198 strings out of 493488
+ 32499 string characters out of 3141326
+ 89900 words of memory out of 3000000
+ 5476 multiletter control sequences out of 15000+200000
+ 9626 words of font info for 35 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,6n,23p,714b,215s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on writeup.pdf (23 pages, 1658352 bytes).
+ 37i,6n,23p,714b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb>
+Output written on writeup.pdf (23 pages, 595309 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 870 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
