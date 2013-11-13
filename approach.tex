@@ -19,7 +19,13 @@ We can speed this up by counting motifs incrementally.  Instead of considering t
 
 This is still fairly slow, so we apply one final optimization.  We notice that for a 4-motif to be affected by the edge changes, vertices $1$ and $2$ of the motif must be endpoints of the edge.  Vertex $3$ must be an immediate neighbor of an endpoint, and vertex $4$ is either an immediate neighbor or a second-degree neighbor.  Ordinarily, we would have to loop through the immediate neighbors to find all possibilities for vertex $3$, and perform an inner loop through the second degree neighbors to find all possibilities for vertex $4$.  But if vertex $4$ was always an immediate neighbor, we could loop through the immediate neighbors both times, which would speed up the algorithm considerably.
 
-Vertex $4$ is not always an immediate neighbor.  However, in the cases where it's not an immediate neighbor, we can do a lot less computation than we would have to otherwise.  We can break these situations up into three cases: [add figure]
+Vertex $4$ is not always an immediate neighbor.  However, in the cases where it's not an immediate neighbor, we can do a lot less computation than we would have to otherwise.  We can break these situations up into three cases:
+
+\begin{figure}
+\centering
+\includegraphics[width=3in]{Figures/case.eps}
+\label{fig:case}
+\end{figure}
 
 \begin{itemize}
 \item Vertex $3$ is not connected to vertex $4$.  In this case, the four vertices can never form a 4-motif, regardless of whether vertices $1$ and $2$ are connected, and we don't have to change the motif counts.
