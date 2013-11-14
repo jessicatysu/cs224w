@@ -1,2 +1,8 @@
 \section{Introduction}
 \label{sec:intro}
+
+Many real-world systems can be modeled by graphs, from power grids to arXiv citations to friendships on Facebook.  Early models attempted to model all systems with the same type of graph.  For example, the Erdos-Renyi random graph models all networks with $n$ participants and $m$ connections with a graph of $n$ nodes and $m$ randomly placed edges.  The Watts-Strogatz model models all networks by connecting nodes to their nearest neighbors, then filling the rest of the graph with randomly placed edges.
+
+More sophisticated models account for differences in degree distribution and clustering coefficient.  The preferential-attachment model generates a graph with power-law degree distribution and allows the modeler to choose the exponent in the power law.  The configuration model takes as input an exact sequence of degrees and creates a random graph with that degree sequence.  Newman's "triangle-edge" model generalizes this to create a random graph with specific degree sequence and clustering coefficient.
+
+In our model we create a random graph with specific degree sequence and motif counts.  A motif is a small subgraph (with fewer than five vertices), so we would create a graph with specific numbers of cycles, 4-cliques, etc.  While this problem does not have exact solutions in all cases, we use hill-climbing to find an approximate solution that produces good results in practice.
