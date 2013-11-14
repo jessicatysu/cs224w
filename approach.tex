@@ -8,7 +8,12 @@ Hill-climbing is a standard technique for finding good solutions to optimization
 
 Hill-climbing does not guarantee an optimal solution, since it tends to get stuck at local maxima.  Yet in practice the solutions it finds are "pretty good," especially after running the algorithm several times and picking the best solution.
 
-In our case we minimize the error between the desired motif counts and our solution's motif counts: $$\mbox{Average relative error} = \frac{1}{\ell} \sum_{i = 1}^{\ell} \frac{|\mbox{counts}_i - \widehat{\mbox{counts}}_i| + 1}{|\mbox{counts}_i| + 1}$$ where $\ell$ is the number of different motif types.
+In our case we minimize the error between the desired motif counts and our solution's motif counts:
+\begin{equation}
+\label{eqn:avgRelativeError}
+\mbox{Average relative error} = \frac{1}{\ell} \sum_{i = 1}^{\ell} \frac{|\mbox{counts}_i - \widehat{\mbox{counts}}_i| + 1}{|\mbox{counts}_i| + 1}
+\end{equation}
+where $\ell$ is the number of different motif types.
 
 We use the configuration model to generate a random graph with the required degree sequence.  Then at each step we choose two edges (at random) and swap their endpoints.  (We chose this transformation step since it preserves the degree sequence of the graph.)  We count the motifs and compare the error with the new counts to the error with the old counts.  If the new counts give a smaller error, we keep the new graph; otherwise, we discard it.
 
@@ -46,7 +51,7 @@ Vertex $4$ is not always an immediate neighbor.  However, in the cases where it'
 
 \begin{figure}
 \centering
-\includegraphics[width=3in]{Figures/case.eps}
+\includegraphics[width=3in]{Figures/case1.eps}
 \label{fig:case}
 \end{figure}
 
