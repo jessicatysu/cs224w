@@ -1,12 +1,15 @@
 \begin{thebibliography}{1}
 
+\bibitem{erdos1960random}
+
+
 \bibitem{albert2002statistical}
 R.~Albert and A.-L. Barab{\'a}si.
 \newblock Statistical mechanics of complex networks.
 \newblock {\em Reviews of modern physics}, 74(1):47, 2002.
 
 \bibitem{erdds1959random}
-P.~ERDdS and A.~R\&WI.
+P.~Erdos and A.~Renyi.
 \newblock On random graphs i.
 \newblock {\em Publ. Math. Debrecen}, 6:290--297, 1959.
 
@@ -20,9 +23,15 @@ M.~E. Newman.
 \newblock Random graphs with clustering.
 \newblock {\em Physical review letters}, 103(5):058701, 2009.
 
+\bibitem{milo04random}
+S.~I. M.~N. R.~Milo, N.~Kashtan and U.~Alon.
+\newblock On the uniform generation of random graphs with prescribed degree
+  sequences.
+\newblock {\em arXiv:cond-mat/0312028v2}, 2004.
+
 \bibitem{watts1998collective}
 D.~J. Watts and S.~H. Strogatz.
-\newblock Collective dynamics of ‘small-world’networks.
+\newblock Collective dynamics of ‘small-world’ networks.
 \newblock {\em nature}, 393(6684):440--442, 1998.
 
 \end{thebibliography}

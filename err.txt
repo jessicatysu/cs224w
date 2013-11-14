@@ -1,0 +1,399 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
+ restricted \write18 enabled.
+ Source specials enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./sig-alternate.cls
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvips.def))))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty))
+Document Class 'sig-alternate' <23rd. May '12>. Modified by G.K.M. Tobin/Gerry 
+Murray
+Based in part upon document Style `acmconf' <22 May 89>. Hacked 4/91 by
+shivers@cs.cmu.edu, 4/93 by theobald@cs.mcgill.ca
+Excerpts were taken from (Journal Style) 'esub2acm.cls'.
+****** Bugs/comments/suggestions/technicalities to Gerry Murray -- murray@hq.ac
+m.org ******
+Questions on the style, SIGS policies, etc. to Adrienne Griscti griscti@acm.org
+
+Document Class: sig-alternate 2012/05/23 - V2.5 - based on acmproc.cls V1.3 <No
+v. 30 '99>
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/latexsym.sty)
+Using 'Abbrev' bibliography style
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ae/t1aer.fd)))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.cfg))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/preprint/balance.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/relsize/relsize.sty)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+)
+No file main.aux.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd) (./abstract.tex)
+(./intro.tex
+
+LaTeX Warning: Citation `erdds1959random' on page \thepage  undefined on input 
+line 4.
+
+
+LaTeX Warning: Citation `erdos1960random' on page \thepage  undefined on input 
+line 4.
+
+
+LaTeX Warning: Citation `watts1998collective' on page \thepage  undefined on in
+put line 4.
+
+
+LaTeX Warning: Citation `albert2002statistical' on page \thepage  undefined on 
+input line 6.
+
+
+LaTeX Warning: Citation `newman2009random' on page \thepage  undefined on input
+ line 6.
+
+) (./background.tex <Figures/network.eps> <Figures/motifs1.eps> [1]
+
+LaTeX Warning: Reference `fig:motif' on page \thepage  undefined on input line 
+40.
+
+
+LaTeX Warning: Reference `fig:network' on page \thepage  undefined on input lin
+e 43.
+
+) (./relatedwork.tex
+Overfull \hbox (1.5044pt too wide) in paragraph at lines 42--1
+\T1/ptm/m/n/9 30, mf-Four-Tri-an-gleEdge: 10, mf-FourSquare-Diag: 17, mf-Four-C
+om-
+
+LaTeX Warning: Citation `milo04random' on page \thepage  undefined on input lin
+e 4.
+
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{algorithmic}
+                       
+
+! LaTeX Error: \begin{lrbox} on input line 7 ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \end{algorithmic}
+                      
+) (./problem.tex
+
+LaTeX Warning: Citation `erdds1959random' on page \thepage  undefined on input 
+line 17.
+
+
+LaTeX Warning: Citation `watts1998collective' on page \thepage  undefined on in
+put line 17.
+
+
+LaTeX Warning: Citation `albert2002statistical' on page \thepage  undefined on 
+input line 17.
+
+
+LaTeX Warning: Citation `newman2009random' on page \thepage  undefined on input
+ line 17.
+
+
+LaTeX Warning: Citation `molloy1995critical' on page \thepage  undefined on inp
+ut line 17.
+
+) (./approach.tex
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \begin{algorithmic}
+                        
+
+! LaTeX Error: \begin{lrbox} on input line 16 ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \end{algorithmic}
+                      
+[2] <Figures/case.eps>) (./exp.tex
+
+LaTeX Warning: Reference `table:errors' on page \thepage  undefined on input li
+ne 4.
+
+<Figures/acceptedOnly-aut-as19971108.eps>
+<Figures/acceptedOnly-aut-as19990628.eps>
+<Figures/acceptedOnly-cit-scimet.eps> <Figures/acceptedOnly-col-ca-GrQc.eps>
+<Figures/acceptedOnly-col-netscience.eps> <Figures/acceptedOnly-met-HI.eps>
+<Figures/acceptedOnly-ppi-ppiall.eps> <Figures/acceptedOnly-ppi-ppiapms.eps>
+<Figures/acceptedOnly-pwr-power.eps> <Figures/Paccept-aut-as19971108.eps>
+<Figures/Paccept-aut-as19990628.eps> <Figures/Paccept-cit-scimet.eps>
+<Figures/Paccept-col-ca-GrQc.eps> <Figures/Paccept-col-netscience.eps>
+<Figures/Paccept-met-HI.eps> <Figures/Paccept-ppi-ppiall.eps>
+<Figures/Paccept-ppi-ppiapms.eps>
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \begin{figure}[p]
+                       
+<Figures/Paccept-pwr-power.eps>) (./futurework.tex) (./main.bbl) [3] [4]
+[5] [6] [7] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)
+Output written on main.dvi (7 pages, 30720 bytes).
+Transcript written on main.log.
+This is BibTeX, Version 0.99d (TeX Live 2013)
+The top-level auxiliary file: main.aux
+The style file: abbrv.bst
+Database file #1: references.bib
+Warning--to sort, need author or key in erdos1960random
+Name 1 in "R. Milo, N. Kashtan, S. Itzkovitz, M.E.J. Newman, and U. Alon" has a comma at the end for entry milo04random
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "R. Milo, N. Kashtan, S. Itzkovitz, M.E.J. Newman, and U. Alon" for entry milo04random
+while executing---line 1049 of file abbrv.bst
+Warning--empty author in erdos1960random
+Warning--empty title in erdos1960random
+Warning--empty journal in erdos1960random
+Warning--empty year in erdos1960random
+Name 1 in "R. Milo, N. Kashtan, S. Itzkovitz, M.E.J. Newman, and U. Alon" has a comma at the end for entry milo04random
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "R. Milo, N. Kashtan, S. Itzkovitz, M.E.J. Newman, and U. Alon" for entry milo04random
+while executing---line 1090 of file abbrv.bst
+(There were 4 error messages)
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
+ restricted \write18 enabled.
+ Source specials enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./sig-alternate.cls
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvips.def))))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty))
+Document Class 'sig-alternate' <23rd. May '12>. Modified by G.K.M. Tobin/Gerry 
+Murray
+Based in part upon document Style `acmconf' <22 May 89>. Hacked 4/91 by
+shivers@cs.cmu.edu, 4/93 by theobald@cs.mcgill.ca
+Excerpts were taken from (Journal Style) 'esub2acm.cls'.
+****** Bugs/comments/suggestions/technicalities to Gerry Murray -- murray@hq.ac
+m.org ******
+Questions on the style, SIGS policies, etc. to Adrienne Griscti griscti@acm.org
+
+Document Class: sig-alternate 2012/05/23 - V2.5 - based on acmproc.cls V1.3 <No
+v. 30 '99>
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/latexsym.sty)
+Using 'Abbrev' bibliography style
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ae/t1aer.fd)))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.cfg))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/preprint/balance.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/relsize/relsize.sty)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+) (./main.aux) (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd) (./abstract.tex)
+(./intro.tex
+
+LaTeX Warning: Citation `erdds1959random' on page \thepage  undefined on input 
+line 4.
+
+
+LaTeX Warning: Citation `erdos1960random' on page \thepage  undefined on input 
+line 4.
+
+
+LaTeX Warning: Citation `watts1998collective' on page \thepage  undefined on in
+put line 4.
+
+
+LaTeX Warning: Citation `albert2002statistical' on page \thepage  undefined on 
+input line 6.
+
+
+LaTeX Warning: Citation `newman2009random' on page \thepage  undefined on input
+ line 6.
+
+) (./background.tex <Figures/network.eps> <Figures/motifs1.eps> [1])
+(./relatedwork.tex
+
+LaTeX Warning: Citation `milo04random' on page \thepage  undefined on input lin
+e 4.
+
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{algorithmic}
+                       
+
+! LaTeX Error: \begin{lrbox} on input line 7 ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \end{algorithmic}
+                      
+) (./problem.tex
+
+LaTeX Warning: Citation `erdds1959random' on page \thepage  undefined on input 
+line 17.
+
+
+LaTeX Warning: Citation `watts1998collective' on page \thepage  undefined on in
+put line 17.
+
+
+LaTeX Warning: Citation `albert2002statistical' on page \thepage  undefined on 
+input line 17.
+
+
+LaTeX Warning: Citation `newman2009random' on page \thepage  undefined on input
+ line 17.
+
+
+LaTeX Warning: Citation `molloy1995critical' on page \thepage  undefined on inp
+ut line 17.
+
+) (./approach.tex
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \begin{algorithmic}
+                        
+
+! LaTeX Error: \begin{lrbox} on input line 16 ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \end{algorithmic}
+                      
+[2] <Figures/case.eps>) (./exp.tex <Figures/acceptedOnly-aut-as19971108.eps>
+<Figures/acceptedOnly-aut-as19990628.eps>
+<Figures/acceptedOnly-cit-scimet.eps> <Figures/acceptedOnly-col-ca-GrQc.eps>
+<Figures/acceptedOnly-col-netscience.eps> <Figures/acceptedOnly-met-HI.eps>
+<Figures/acceptedOnly-ppi-ppiall.eps> <Figures/acceptedOnly-ppi-ppiapms.eps>
+<Figures/acceptedOnly-pwr-power.eps> <Figures/Paccept-aut-as19971108.eps>
+<Figures/Paccept-aut-as19990628.eps> <Figures/Paccept-cit-scimet.eps>
+<Figures/Paccept-col-ca-GrQc.eps> <Figures/Paccept-col-netscience.eps>
+<Figures/Paccept-met-HI.eps> <Figures/Paccept-ppi-ppiall.eps>
+<Figures/Paccept-ppi-ppiapms.eps>
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \begin{figure}[p]
+                       
+<Figures/Paccept-pwr-power.eps>) (./futurework.tex) (./main.bbl) [3] [4]
+[5] [6] [7] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)
+Output written on main.dvi (7 pages, 32008 bytes).
+Transcript written on main.log.
