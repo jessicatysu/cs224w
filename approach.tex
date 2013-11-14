@@ -12,6 +12,27 @@ In our case we minimize the error between the desired motif counts and our solut
 
 We use the configuration model to generate a random graph with the required degree sequence.  Then at each step we choose two edges (at random) and swap their endpoints.  (We chose this transformation step since it preserves the degree sequence of the graph.)  We count the motifs and compare the error with the new counts to the error with the old counts.  If the new counts give a smaller error, we keep the new graph; otherwise, we discard it.
 
+\begin{algorithm}
+\caption{Naive approach}
+\label{algorithm:naive}
+\begin{algorithmic}
+Initialize graph $G = (V, E)$ with prescribed degree sequence\\
+motifCounts <- CountMotifs($G$)\\
+\Repeat{computation time limit exceeded} {
+	Choose $e_1, e_2 \in E$ at random\\
+	Add edges $(e_1.Src, e_2.Dst)$, $(e_2.Src, e_1.Dst)$\\
+	Delete edges $(e_1.Src, e_1.Dst)$, $(e_2.Src, e_2.Dst)$\\
+	newMotifCounts <- CountMotifs($G$)\\
+	\eIf {error(newMotifCounts) < error(motifCounts)} {
+		motifCounts <- newMotifCounts\\
+	} {
+		Return graph to original state\\
+	}
+}
+
+\end{algorithmic}
+\end{algorithm}
+
 \subsection{Optimizations}
 As written, this solution is very slow.  Counting motifs is $O(|V|^4)$ and takes unacceptably long in practice.  To get good results in practice, we need a large number of rewiring steps, so ideally each rewiring step should take less than a second.
 

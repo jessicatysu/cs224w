@@ -1,0 +1,19 @@
+\section{Related work}
+\label{sec:related}
+
+Our approach is inspired by Milo's approach for generating a random graph with prescribed degree sequence.~\cite{milo04random} He begins by generating an arbitrary graph with that degree sequence.  (This can be done by giving each node a certain number of ``half-edges,'' then connecting them randomly to form the edges of the graph.)  One this graph is generated, he chooses pairs of edges at random and swaps the endpoints, repeating this step until the graph is sufficiently ``randomized.''
+
+\begin{algorithm}
+\caption{Milo's approach for generating random graphs with prescribed degree sequences.}
+\label{algorithm:milo}
+\begin{algorithmic}
+Generate graph $G = (V, E)$ with required degree sequence\\
+\While{Markov chain displays insufficient mixing}{
+	Choose $e_1, e_2 \in E$ at random\\
+	Add edges $(e_1.Src, e_2.Dst)$, $(e_2.Src, e_1.Dst)$\\
+	Delete edges $(e_1.Src, e_1.Dst)$, $(e_2.Src, e_2.Dst)$\\
+}
+\end{algorithmic}
+\end{algorithm}
+
+This ``rewiring'' step is innovative because it preserves both the number of edges and the degree of each node.  For this reason we use the same rewiring step in our algorithm.
