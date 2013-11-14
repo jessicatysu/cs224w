@@ -15,11 +15,6 @@ P.~Erdos and A.~Renyi.
 \newblock On the evolution of random graphs.
 \newblock {\em Magyar Tud. Akad. Mat. Kutato Int. Koezl}, 1960.
 
-\bibitem{molloy1995critical}
-M.~Molloy and B.~Reed.
-\newblock A critical point for random graphs with a given degree sequence.
-\newblock {\em Random structures \& algorithms}, 6(2-3):161--180, 1995.
-
 \bibitem{newman2009random}
 M.~E. Newman.
 \newblock Random graphs with clustering.
@@ -30,6 +25,11 @@ S.~I. M.~N. R.~Milo, N.~Kashtan and U.~Alon.
 \newblock On the uniform generation of random graphs with prescribed degree
   sequences.
 \newblock {\em arXiv:cond-mat/0312028v2}, 2004.
+
+\bibitem{chuanqi}
+C.~Shen.
+\newblock Curis project on clustering social networks.
+\newblock 2013.
 
 \bibitem{watts1998collective}
 D.~J. Watts and S.~H. Strogatz.
