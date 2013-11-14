@@ -1,7 +1,8 @@
 \section{Experimental Results}
 \label{sec:exp}
 
-We conduct various experiments to evaluate our proposed method.  The datasets are publicly available at the SNAP website.\footnote{http://snap.stanford.edu/data/index.html}
+We conduct various experiments to evaluate our proposed method.
+%The datasets are publicly available at the SNAP website.\footnote{http://snap.stanford.edu/data/index.html}
 
 \subsection{Experimental Setup}
 
@@ -26,7 +27,7 @@ pwr-power & 4941 & 6594 \\\hline
 
 
 \vpara{Data sets.} We evaluate the proposed method on nine different networks: aut-as19971108, aut-as19990628, cit-scimet, col-ca-GrQc, col-netscience, met-HI, ppi-ppiall, ppi-ppiapms and pwr-power.
-Table \ref{tb:statistics} lists statistics of the nine networks. 
+Table \ref{tb:statistics} lists statistics of the nine networks.  All data was obtained from Jure Leskovec at Stanford University.
 
 \vpara{Evaluation metrics.} To quantitatively evaluate the proposed model, we use the average relative error between the model's motif counts and the motif counts of the real network.  The average relative error is defined in equation~\ref{eqn:avgRelativeError}.
 
@@ -37,6 +38,16 @@ All code is implemented in C++ and Python, and all the evaluations are performed
 Hill climbing produces excellent results on most networks.  Table ~\ref{table:errors} shows the improvements in the error after running hill climbing for 24 hours.
 
 Although performance varies across networks, we get at least a 50\% decrease in error for all networks except aut-as19990628 and cit-scimet.  For some networks we get an enormous reduction in error; pwr-power gives a 99.5\% reduction and met-HI gives a 99.9\% reduction.  The first group of figures plots the error over time and the second group plots the probability that a rewiring step will be successful (i.e. that the changes are accepted instead of discarded).
+
+The error graphs for aut-as19971108 (Figure~\ref{fig:errors-aut-as19971108}) and col-netscience (Figure~\ref{fig:errors-col-netscience}) converge to an asymptote.  This indicates that running the procedure longer would not improve the error and the final error is a good reflection of the algorithm's performance.  Since the errors approach nonzero values (and we know a perfect solution exists), this implies that our hill climbing algorithm has found a local minimum.
+
+The graph for pwr-power (Figure~\ref{fig:errors-pwr-power}) rapidly decreases to zero.  This means we have found a perfect or near-perfect solution.  The graph for met-HI (Figure~\ref{fig:errors-met-HI}) also appears to decrease to zero, but that's just because the error started out very high.  (The initial error was 8039.58 and the final error was 0.46768.)
+
+The other error graphs have not yet converged and are steadily decreasing 24 hours after the computation.  This indicates that we can reduce the final error by increasing the computation time and our current results are not a hard limit on the algorithm's performance.
+
+In order to quantify the algorithm's convergence, we plotted the successful rewiring probability over time.  This is the probability that rewiring two edges produces a graph with smaller error than the previous graph.  When this probability reaches zero, the hill climbing algorithm has found a local minimum and cannot proceed further.
+
+The probability curves for pwr-power (Figure~\ref{fig:Paccept-pwr-power}) and col-netscience (Figure~\ref{fig:Paccept-col-netscience}) quickly drop to zero, indicating that the algorithm has converged.  The curves for cit-scimet (Figure~\ref{fig:Paccept-cit-scimet}) and aut-as19990628 (Figure~\ref{fig:Paccept-aut-as19990628}) remain high throughout the algorithm, indicating that we need to run the algorithm longer.  The other curves do not drop to zero, but hover at small nonzero values.  This means the algorithm has not yet converged, but running it longer may yield diminishing returns.
 
 \begin{table*}[t]
 \centering
