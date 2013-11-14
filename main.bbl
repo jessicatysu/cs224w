@@ -1,8 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{erdos1960random}
-
-
 \bibitem{albert2002statistical}
 R.~Albert and A.-L. Barab{\'a}si.
 \newblock Statistical mechanics of complex networks.
@@ -12,6 +9,11 @@ R.~Albert and A.-L. Barab{\'a}si.
 P.~Erdos and A.~Renyi.
 \newblock On random graphs i.
 \newblock {\em Publ. Math. Debrecen}, 6:290--297, 1959.
+
+\bibitem{erdos1960random}
+P.~Erdos and A.~Renyi.
+\newblock On the evolution of random graphs.
+\newblock {\em Magyar Tud. Akad. Mat. Kutato Int. Koezl}, 1960.
 
 \bibitem{molloy1995critical}
 M.~Molloy and B.~Reed.
@@ -31,7 +33,7 @@ S.~I. M.~N. R.~Milo, N.~Kashtan and U.~Alon.
 
 \bibitem{watts1998collective}
 D.~J. Watts and S.~H. Strogatz.
-\newblock Collective dynamics of ‘small-world’ networks.
-\newblock {\em nature}, 393(6684):440--442, 1998.
+\newblock Collective dynamics of small-world networks.
+\newblock {\em Nature}, 393(6684):440--442, 1998.
 
 \end{thebibliography}
