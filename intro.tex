@@ -5,4 +5,6 @@ Many real-world systems can be modeled by graphs, from power grids to arXiv cita
 
 More sophisticated models account for differences in degree distribution and clustering coefficient.  The preferential-attachment model~\cite{albert2002statistical} generates a graph with power-law degree distribution and allows the modeler to choose the exponent in the power law.  The configuration model takes as input an exact sequence of degrees and creates a random graph with that degree sequence.  Newman's "triangle-edge" model~\cite{newman2009random} generalizes this to create a random graph with specific degree sequence and clustering coefficient.
 
-In our model we create a random graph with specific degree sequence and motif counts.  A motif is a small subgraph (with fewer than five vertices), so we would create a graph with specific numbers of cycles, 4-cliques, etc.  While this problem does not necessarily have exact solutions, we use hill-climbing to find an approximate solution that produces good results in practice.
+In our model we create a random graph with specific degree sequence and motif counts.  Algorithms that classify social networks according to their motif counts find clusters that correspond closely to real-life functionality~\cite{chuanqi}.  Therefore, by generating graphs with similar motif counts, we hope to build graphs that function similarly to real-life social networks.
+
+While it is difficult to find exact solutions, we use hill-climbing to find approximate solutions that produce good results in practice.
