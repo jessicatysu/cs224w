@@ -1,13 +1,51 @@
 \section{Results}
 \label{sec:exp}
 
+We conduct various experiments to evaluate the our propsed method.
+The datasets and codes are publicly available.\footnote{http://snap.stanford.edu/data/index.html}
+
+\subsection{Experiment Setup}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{c|c@{ }|c@{ }}
+\hline
+Dataset             &   \#nodes       &   \#edges \\ \hline
+aut-as19971108 & 3015 & 5156 \\\hline
+aut-as19990628 & 5322 & 10163 \\\hline
+cit-scimet & 3085 & 13474 \\\hline
+col-ca-GrQc & 5242 & 14484 \\\hline
+col-netscience & 1461 & 2742 \\\hline
+met-HI & 1424 & 3423 \\\hline
+ppi-ppiall & 3258 & 12930 \\\hline
+ppi-ppiapms & 1622 & 9070 \\\hline
+pwr-power & 4941 & 6594 \\\hline
+\end{tabular}
+\caption{Statistics of the nine networks.}
+\label{tb:statistics}
+\end{table}
+
+
+\vpara{Data sets.} We evaluate the proposed method on nine different kinds of networks: aut-as19971108, aut-as19990628, cit-scimet, col-ca-GrQc, col-netscience, met-HI, ppi-ppiall, ppi-ppiapms and pwr-power.
+Table \ref{tb:statistics} lists statistics of the nine networks. 
+
+\vpara{Evaluation metrics.} To quantitatively evaluate the proposed model, we consider using the average relative error to measure our performance:
+
+\textbf{Average relative error}: the absolute error divided by the magnitude of the exact value.
+
+$$ARE = \frac{|D - D_{approx}|}{D}$$
+
+All codes are implemented in C++ and Python, and all the evaluations are performed on an x64 machine with E7520 1.87GHz Intel Xeon CPU (with 16 cores) and 192GB RAM. The operation system is Microsoft Windows Server 2008 R2 Enterprise. 
+
+\subsection{Performance Analysis}
+
 Hill climbing produces excellent results on most networks.  Table ~\ref{table:errors} shows the improvements in the error after running hill climbing for 24 hours.
 
 Although performance varies across networks, we get at least a 50\% decrease in error for all networks except aut-as19990628 and cit-scimet.  For some networks we get an enormous reduction in error; pwr-power gives a 99.5\% reduction and met-HI gives a 99.9\% reduction.  The first group of figures plots the reduction in error over time and the second group plots the probability that a rewiring step will be successful (i.e. that we will accept the changes instead of discarding them).
 
 \begin{table*}[t]
 \centering
-\begin{tabular}{| l | l | l | | l | l | l |}
+\begin{tabular}{l | l | l | | l | l | l}
 \hline
 Network & Nodes & Edges & Initial error & Final error & Successful rewires\\ \hline
 aut-as19971108 & 3015 & 5156 & 0.34216 & 0.16717 & 2951.00\\\hline
