@@ -10,6 +10,16 @@ P.~ERDdS and A.~R\&WI.
 \newblock On random graphs i.
 \newblock {\em Publ. Math. Debrecen}, 6:290--297, 1959.
 
+\bibitem{hemmecke2009nonlinear}
+R.~Hemmecke, M.~K{\"o}ppe, J.~Lee, and R.~Weismantel.
+\newblock Nonlinear integer programming.
+\newblock {\em arXiv preprint arXiv:0906.5171}, 2009.
+
+\bibitem{karp1972reducibility}
+R.~M. Karp.
+\newblock {\em Reducibility among combinatorial problems}.
+\newblock Springer, 1972.
+
 \bibitem{molloy1995critical}
 M.~Molloy and B.~Reed.
 \newblock A critical point for random graphs with a given degree sequence.

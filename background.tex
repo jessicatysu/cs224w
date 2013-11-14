@@ -3,8 +3,15 @@
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=3in]{Figures/motifs.eps}
-\caption{Graphical representation of the 3-motifs and 4-motifs.}
+\includegraphics[width=3in]{Figures/network.eps}
+\caption{A sample social network.}
+\label{fig:network}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=3in]{Figures/motifs1.eps}
+\caption{Graphical representation of the motifs.}
 \label{fig:motif}
 \end{figure}
 
@@ -28,12 +35,12 @@ graph consisting of the vertices $V'$ and the edges between them.
 
 A \textbf{motif} is a small, connected graph, often considered as a
 subgraph of a larger graph. In this paper, we only
-consider motifs with $3$ or $4$ vertices, which we term "3-motifs" and
-"4-motifs" respectively.  A full list of motifs is shown in
+consider motifs within $4$ vertices, which we term "1-motif", "2-motif", "3-motif" and
+"4-motif" respectively. Note that, 1-motif is simply a vertex, and 2-motif is simply an edge. A full list of motifs is shown in
 Figure~\ref{fig:motif}.
 
 The \textbf{motif distribution} of a graph $G$ specifies how many of each
-motif type the graph contains.  For example, a graph with motif
+motif type the graph contains.  For example, in Figure~\ref{fig:network} represents a graph with motif
 distribution \{mtThreeClosed: 12, mtThreeOpen: 16, mfFourLine: 22,
 mfFourSquare: 18, mfFourStar: 30, mfFourTriangleEdge: 10, mfFourSquareDiag:
 17, mfFourComplete: 2\} would contain twelve triangles, two 4-cliques, and

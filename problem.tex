@@ -2,14 +2,12 @@
 \label{sec:problem}
 \vpara{Problem:} To generate a network with desired specifications.
 
-\vpara{Input:} The input of our problem consists of two components: the
-number of vertices and edges in the network, and the required motif 
-distribution $D$.
+\vpara{Input:} The input of our problem consists of is the motif 
+distribution $D$. In this paper, we only consider motif within 4 vertices.
 
-\vpara{Output:} Our goal is to generate a graph $G$ which has the required
-number of vertices and edges and a motif distribution that closely
+\vpara{Output:} Our goal is to generate a graph $G$ which has motif distribution that closely
 approximates $D$.
-\\\\
+
 Ideally we would generate a graph with the exact motif distribution $D$.
 In the next section we show that problem is NP-hard, so the best we can 
 hope for is an approximation.
@@ -20,6 +18,3 @@ newman2009random, molloy1995critical}, as in this paper we focus on
 generating graphs based on the motif distribution.
 Motif distributions are frequently used for analyzing large graphs in the
 social sciences.
-
-
-

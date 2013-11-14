@@ -8,3 +8,4 @@ ps2pdf main.ps
 rm -r *.log
 rm -r *.aux
 rm -r *.blg
+open main.pdf

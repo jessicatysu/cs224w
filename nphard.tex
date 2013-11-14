@@ -1,2 +1,18 @@
-\section{Exact motif generation is NP-hard}
+\section{Hardness of Problem}
 \label{sec:nphard}
+
+In this section, we describe the difficulty of the exact motif generation problem.
+
+
+Given the definition of problem, the motif-driven graph generation problem can be cast as nonlinear programming problem. Let $X_{ij}$ denote the existence of the edge $(v_i, v_j)$ in graph, where $X_{ij} = 1$ if edge $(i, j)$ is in graph, $0$ otherwise. With the motifs can be represent by a polynomial combination of $X_{ij}$, for example, Three Closed of nodes $v_a, v_b, v_c$ as $X_{ab}X_{bc}X_{ac}$ and Four Triangle Edge of $v_a, v_b, v_c, v_d$ as $X_{ab}X_{bc}X_{ca}X_{ad}(1 - X_{bd})(1 - X_{cd})$. For each kind of motif, we can build a nonlinear function to represent the number of motif. Then, we can construct a nonlinear equations.
+
+\theorem The problem of motif generate grpah by $k$-motif is NP-hard, even in the case of there is only triangle closed motif.
+
+\Proof In the case of triangle closed motif, the problem can be reduced to $min\{\sum_{i,j,k} X_{ij}X_{jk}X_{ki}\}, X_{ij} \in \{0, 1\}$, which is an typical nonlinear integer programming. And the problem can further equal to
+\begin{align*}
+\min\mbox{ }&C\\
+s.t. &\sum_{i,j,k} X_{ij}X_{jk}X_{ki} \leq C\\
+&X \geq 0, X \in \{0, 1\}^n
+\end{align*}
+
+According to R. Hemmecke's~\cite{hemmecke2009nonlinear} theory, $\sum_{i,j,k} X_{ij}X_{jk}X_{ki} \leq C$ can be transfer to the linear function, which means the problem equals to the a special case of  linear programming which is 0-1 integer linear programming. This problem is known to be NP-complete. This is one of Karp's 21 NP-complete problems; \cite{karp1972reducibility} Karp showed the NP-completeness by a reduction from the vertex cover problem. So, our motif generation is also NP-complete.
