@@ -1,14 +1,18 @@
 \section{Problem Definition}
 \label{sec:problem}
-\vpara{Problem:} To generate a network with desired specifications.
+Our problem is to generate a network with a specific motif distribution.
 
 \vpara{Input:} A motif distribution $D$, where each motif has at most $4$ vertices.
 
 \vpara{Output:} A graph $G$ with a motif distribution that closely approximates $D$.
+\\\\
+In this report we focus on an easier problem, where we are given both a motif distribution and the real-life network it corresponds to.  This problem is easier since it allows us to use the degree distribution of the original network.  It also guarantees that a solution exists, which is not true for all motif distributions.  (For example, there are no graphs with two nodes and three triangles.)
 
-The problem formulation is different from other graph generation problems
-\cite{erdds1959random, watts1998collective, albert2002statistical,
-newman2009random, molloy1995critical}, as in this paper we focus on
-generating graphs based on the motif distribution.
-Motif distributions are frequently used for analyzing large graphs in the
-social sciences.
+If our purpose is to compare null models to real data sets, it suffices to solve the easier problem, since we have the data required to create the model.  However, in the final report, we will extend our solution to solve the harder problem.
+
+%The problem formulation is different from other graph generation problems
+%\cite{erdds1959random, watts1998collective, albert2002statistical,
+%newman2009random, molloy1995critical}, as in this paper we focus on
+%generating graphs based on the motif distribution.
+%Motif distributions are frequently used for analyzing large graphs in the
+%social sciences.

@@ -15,7 +15,7 @@ In our case we minimize the error between the desired motif counts and our solut
 \end{equation}
 where $\ell$ is the number of different motif types.
 
-We use the configuration model to generate a random graph with the required degree sequence.  Then at each step we choose two edges (at random) and swap their endpoints.  (We chose this transformation step since it preserves the degree sequence of the graph.)  We count the motifs and compare the error with the new counts to the error with the old counts.  If the new counts give a smaller error, we keep the new graph; otherwise, we discard it.
+We use the configuration model to generate a random graph with the required degree sequence.  Then at each step we choose two edges (at random) and swap their endpoints.  We count the motifs and compare the error with the new counts to the error with the old counts.  If the new counts give a smaller error, we keep the new graph; otherwise, we discard it.
 
 \begin{algorithm}
 \caption{Naive approach}
@@ -47,7 +47,7 @@ We can speed this up by counting motifs incrementally.  Instead of considering t
 
 This is still fairly slow, so we apply one final optimization.  We notice that for a 4-motif to be affected by the edge changes, vertices $1$ and $2$ of the motif must be endpoints of the edge.  Vertex $3$ must be an immediate neighbor of an endpoint, and vertex $4$ is either an immediate neighbor or a second-degree neighbor.  Ordinarily, we would have to loop through the immediate neighbors to find all possibilities for vertex $3$, and perform an inner loop through the second degree neighbors to find all possibilities for vertex $4$.  But if vertex $4$ was always an immediate neighbor, we could loop through the immediate neighbors both times, which would speed up the algorithm considerably.
 
-Vertex $4$ is not always an immediate neighbor.  However, in the cases where it's not an immediate neighbor, we can do a lot less computation than we would have to otherwise.  We can break these situations up into three cases:
+Vertex $4$ is not always an immediate neighbor of vertex $1$ or vertex $2$.  However, when it's not an immediate neighbor of either endpoint, we can do a lot less computation than we would have to otherwise.  We can break these situations up into three cases:
 
 \begin{figure}
 \centering

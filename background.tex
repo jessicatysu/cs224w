@@ -17,31 +17,31 @@
 
 In this section, we first give some basic concepts that we use throughout the paper. Then, we formulate the problem of motif-driven graph generation. 
 
-A \textbf{graph} is a representation of a set of objects and the
-connections between them.  It is defined as a tuple $(V, E)$, where $V$ is
-a set of $|V| = N$ vertices ("nodes") and $E \subseteq V \times V$ is a set of edges.
-The nodes in a graph correspond to the objects, and the edges to
-the connections.
-
-A graph is called \textbf{simple} if no node has an edge to itself and no two
-nodes have more than one edge between them.  A graph is \textbf{undirected}
-if whenever $(v, w)$ is an edge, $(w, v)$ is also an edge.  In our problem, 
-we assume all graphs are simple and undirected.
-
-A \textbf{subgraph} of $G$ is a graph whose nodes and edges form subsets of 
-the nodes and edges of the graph $G$.  An
-\textbf{induced subgraph} of $G$ on the vertices $V' \subseteq V$ is the
-graph consisting of the vertices $V'$ and the edges between them.
+%A \textbf{graph} is a representation of a set of objects and the
+%connections between them.  It is defined as a tuple $(V, E)$, where $V$ is
+%a set of $|V| = N$ vertices ("nodes") and $E \subseteq V \times V$ is a set of edges.
+%The nodes in a graph correspond to the objects, and the edges to
+%the connections.
+%
+%A graph is called \textbf{simple} if no node has an edge to itself and no two
+%nodes have more than one edge between them.  A graph is \textbf{undirected}
+%if whenever $(v, w)$ is an edge, $(w, v)$ is also an edge.  In our problem, 
+%we assume all graphs are simple and undirected.
+%
+%A \textbf{subgraph} of $G$ is a graph whose nodes and edges form subsets of 
+%the nodes and edges of the graph $G$.  An
+%\textbf{induced subgraph} of $G$ on the vertices $V' \subseteq V$ is the
+%graph consisting of the vertices $V'$ and the edges between them.
 
 A \textbf{motif} is a small, connected graph, often considered as a
 subgraph of a larger graph. In this paper, we only
-consider motifs within $4$ vertices, which we term "1-motif", "2-motif", "3-motif" and
-"4-motif" respectively. Note that, 1-motif is simply a vertex, and 2-motif is simply an edge. A full list of motifs is shown in
+consider motifs with at most $4$ vertices, which we term "1-motif", "2-motif", "3-motif" and
+"4-motif" respectively. Note that a 1-motif is simply a vertex, and a 2-motif is simply an edge. A full list of motifs is shown in
 Figure~\ref{fig:motif}.
 
 The \textbf{motif distribution} of a graph $G$ specifies how many of each
-motif type the graph contains.  For example, in Figure~\ref{fig:network} represents a graph with motif
-distribution \{mtThreeClosed: 12, mtThreeOpen: 16, mfFourLine: 22,
-mfFourSquare: 18, mfFourStar: 30, mfFourTriangleEdge: 10, mfFourSquareDiag:
-17, mfFourComplete: 2\} would contain twelve triangles, two 4-cliques, and
+motif type the graph contains.  For example, the graph in Figure~\ref{fig:network} has motif
+distribution \{numNodes: 25, numEdges: 44, mtThreeClosed: 21, mtThreeOpen: 151, mfFourLine: 134,
+mfFourSquare: 1, mfFourStar: 305, mfFourTriangleEdge: 155, mfFourSquareDiag:
+26, mfFourComplete: 2\}.  This graph contains 25 nodes, 44 edges, 21 triangles, two 4-cliques, and
 so forth.
