@@ -47,7 +47,7 @@ The other error graphs have not yet converged and are steadily decreasing 24 hou
 
 In order to quantify the algorithm's convergence, we plotted the successful rewiring probability over time.  This is the probability that rewiring two edges produces a graph with smaller error than the previous graph.  When this probability reaches zero, the hill climbing algorithm has found a local minimum and cannot proceed further.
 
-The probability curves for pwr-power (Figure~\ref{Paccept-pwr-power}) and col-netscience (Figure~\ref{Paccept-col-netscience}) quickly drop to zero, indicating that the algorithm has converged.  The curves for cit-scimet (Figure~\ref{Paccept-sci-scimet}) and aut-as19990628 (Figure~\ref{Paccept-aut-as19990628}) remain high throughout the algorithm, indicating that we need to run the algorithm longer.  The other curves do not drop to zero, but hover at small nonzero values.  This means the algorithm has not yet converged, but running it longer may yield diminishing returns.
+The probability curves for pwr-power (Figure~\ref{fig:Paccept-pwr-power}) and col-netscience (Figure~\ref{fig:Paccept-col-netscience}) quickly drop to zero, indicating that the algorithm has converged.  The curves for cit-scimet (Figure~\ref{fig:Paccept-cit-scimet}) and aut-as19990628 (Figure~\ref{fig:Paccept-aut-as19990628}) remain high throughout the algorithm, indicating that we need to run the algorithm longer.  The other curves do not drop to zero, but hover at small nonzero values.  This means the algorithm has not yet converged, but running it longer may yield diminishing returns.
 
 \begin{table*}[t]
 \centering
