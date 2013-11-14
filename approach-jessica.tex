@@ -1,19 +1,12 @@
 \section{Our Approach}
 \label{sec:approach}
 
-In this section, we propose a heuristic model to generating the motif driven social network.
-
 \subsection{Hill climbing}
 Hill-climbing is a standard technique for finding good solutions to optimization problems.  Start with a solution that is not particularly good.  At each step, perturb the solution randomly.  If the new answer is better, keep it; if not, keep the old solution.  Repeat this until the algorithm converges to a good solution.
 
 Hill-climbing does not guarantee an optimal solution, since it tends to get stuck at local maxima.  Yet in practice the solutions it finds are "pretty good," especially after running the algorithm several times and picking the best solution.
 
-In our case we minimize the error between the desired motif counts and our solution's motif counts:
-\begin{equation}
-\label{eqn:avgRelativeError}
-\mbox{Average relative error} = \frac{1}{\ell} \sum_{i = 1}^{\ell} \frac{|\mbox{counts}_i - \widehat{\mbox{counts}}_i| + 1}{|\mbox{counts}_i| + 1}
-\end{equation}
-where $\ell$ is the number of different motif types.
+In our case we minimize the error between the desired motif counts and our solution's motif counts: $$\mbox{Average relative error} = \frac{1}{\ell} \sum_{i = 1}^{\ell} \frac{|\mbox{counts}_i - \widehat{\mbox{counts}}_i| + 1}{|\mbox{counts}_i| + 1}$$ where $\ell$ is the number of different motif types.
 
 We use the configuration model to generate a random graph with the required degree sequence.  Then at each step we choose two edges (at random) and swap their endpoints.  (We chose this transformation step since it preserves the degree sequence of the graph.)  We count the motifs and compare the error with the new counts to the error with the old counts.  If the new counts give a smaller error, we keep the new graph; otherwise, we discard it.
 
@@ -51,7 +44,7 @@ Vertex $4$ is not always an immediate neighbor.  However, in the cases where it'
 
 \begin{figure}
 \centering
-\includegraphics[width=3in]{Figures/case1.eps}
+\includegraphics[width=3in]{Figures/case.eps}
 \label{fig:case}
 \end{figure}
 
@@ -62,3 +55,64 @@ Vertex $4$ is not always an immediate neighbor.  However, in the cases where it'
 \end{itemize}
 
 It is much faster to test for these cases than to do the normal computations (which would involve finding the induced subgraph on those four vertices, then testing it to see if it was either of the 4-motifs).  So implementing this optimization produces an enormous speedup, allowing us to perform several thousand rewiring steps in one day.
+
+%\begin{algorithm}
+%\caption{Our approach}
+%\label{algorithm:hillclimbing}
+%\begin{algorithmic}
+%Initialize graph $G = (V, E)$ with prescribed degree sequence\\
+%motifCounts <- CountMotifs($G$)\\
+%\Repeat{computation time limit exceeded} {
+%	addedMotifCounts <- \{0, \dots, 0\}
+%	Choose $e_1, e_2 \in E$ at random\\
+%	G_{small} <- InducedSubgraph($G$, secondDegreeNeighbors(e_1.Src, e_1.Dst, e_2.Src, e_2.Dst)\\
+%
+%	\ForEach{$e = (v_1, v_2)$ \in $(e_1.Src, e_2.Dst)$, $(e_2.Src, e_1.Dst)$}{
+%		Add edge $e = (v_1, v_2)$ to graph $G_{small}$\\
+%		
+%		
+%	}
+%	Delete edges $(e_1.Src, e_1.Dst)$, $(e_2.Src, e_2.Dst)$\\
+%	newMotifCounts <- CountMotifs($G$)\\
+%	\eIf {error(newMotifCounts) < error(motifCounts)} {
+%		motifCounts <- newMotifCounts\\
+%	} {
+%		Return graph to original state\\
+%	}
+%}
+%
+%\begin{function}
+%	\If {edgePresent is True} {
+%		Delete edge $(v_1, v_2)$
+%	}
+%	
+%	firstDegreeNeighbors <- GetNeighbors(v_1, v_2)\\
+%	secondDegreeNeighbors <- GetNeighbors(firstDegreeNeighbors)\\
+%	\Comment{Count 3-motifs}
+%	\ForEach{$v_3$ in firstDegreeNeighbors} {
+%		\If {$v_1$ and $v_2$ both connected to $v_3$ in $G_{small}$} {
+%			mtThreeClosed <- mtThreeClosed + 1
+%			mtThreeOpen <- mtThreeOpen - 1
+%		} \ElseIf {$v_1$ or $v_2$ are connected to $v_3$ in $G_{small}$} {
+%			mtThreeOpen <- mtThreeOpen + 1
+%		} \Else {
+%			pass
+%		}
+%	}
+%	\Comment{Count 4-motifs}
+%	\ForEach{$v_3$ in firstDegreeNeighbors} {
+%		\ForEach{$v_4$ in firstDegreeNeighbors} {
+%			m = InducedSubgraph($G_{small}$, (v1, v2, v3, v4))
+%			\ForEach{motif in ListOfMotifs} {
+%				\If{m is instance of motif}
+%			}
+%		}
+%		\ForEach{$v_4$ in secondDegreeNeighbors - firstDegreeNeighbors} {
+%		
+%		}
+%	}
+%	\caption{CountAddedMotifs($G_{small}$, $v_1$, $v_2$, bool edgePresent)}
+%\end{function}
+%
+%\end{algorithmic}
+%\end{algorithm}
