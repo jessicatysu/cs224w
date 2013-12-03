@@ -1,14 +1,45 @@
 \section{Problem Definition}
 \label{sec:problem}
-Our problem is to generate a network with a specific motif distribution.
+Our goal is to generate a random graph with a given motif distribution $D$,
+where each graph with correct motif counts is chosen with equal probability.
 
+This is a difficult problem, so we solve the easier problem of generating
+an arbitrary graph with motif distribution $D$.  Given a solution to this
+problem, we may be able to solve the original problem by finding 
+transformations that preserve the motif distribution $D$, then showing
+that every graph with motif distribution $D$ can be obtained through a
+sequence of such transformations.  However, this is very challenging and we
+relegate it to future work.
+
+Finding an arbitrary graph with motif distribution $D$ is not always
+possible and may be NP-hard.  Therefore, we try to find a graph with a
+motif distribution that closely approximates $D$, where "closeness" is
+defined by the average relative error between the graph's motif counts and
+the desired motif counts (Equation~\ref{eqn:avgRelativeError}).
+
+\begin{framed}
 \vpara{Input:} A motif distribution $D$, where each motif has at most $4$ vertices.
 
-\vpara{Output:} A graph $G$ with a motif distribution that closely approximates $D$.
+\vpara{Output:} A graph $G$ with a motif distribution that closely
+approximates $D$.
+\end{framed}
 \\\\
-In this report we focus on an easier problem, where we are given both a motif distribution and the real-life network it corresponds to.  This problem is easier since it allows us to use the degree distribution of the original network.  It also guarantees that a solution exists, which is not true for all motif distributions.  (For example, there are no graphs with two nodes and three triangles.)
+We first focus on an easier problem, where we are given both a motif
+distribution and the real-life network it corresponds to.  This problem is
+easier since it allows us to use the degree distribution of the original
+network.  It also guarantees that a solution exists, which is not true for
+all motif distributions.  (For example, there are no graphs with two nodes
+and three triangles.)  In solving this problem we should not just return
+the original graph, since that method cannot be easily extended to solve
+the previous problems.
 
-If our purpose is to compare null models to real data sets, it suffices to solve the easier problem, since we have the data required to create the model.  However, in the final report, we will extend our solution to solve the harder problem.
+If our purpose is to compare null models to real data sets, it suffices to
+solve the easier problem, since we have the data required to create the
+model.  If we want to solve the harder problem, we can assume that the
+degree distribution follows a power law and use the motif counts to predict
+the exponent.  Then we can use the solution to the easier problem to solve
+the harder problem.  We predict the exponent in Section~\ref{sec:alpha}.
+
 
 %The problem formulation is different from other graph generation problems
 %\cite{erdds1959random, watts1998collective, albert2002statistical,
