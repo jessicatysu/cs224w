@@ -15,6 +15,12 @@ P.~Erdos and A.~Renyi.
 \newblock On the evolution of random graphs.
 \newblock {\em Magyar Tud. Akad. Mat. Kutato Int. Koezl}, 1960.
 
+\bibitem{friedman2002stochastic}
+J.~H. Friedman.
+\newblock Stochastic gradient boosting.
+\newblock {\em Computational Statistics \& Data Analysis}, 38(4):367--378,
+  2002.
+
 \bibitem{newman2009random}
 M.~E. Newman.
 \newblock Random graphs with clustering.

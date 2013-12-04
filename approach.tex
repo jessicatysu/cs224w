@@ -1,6 +1,20 @@
 \section{Our Approach}
 \label{sec:approach}
 
+In this section, we present a approach framework for generating the graph. At the high level, our proposed framework consists of two stage.
+\begin{itemize}
+    \item {\bf Degree distribution generation.} First, given a certain motif distribution, we train a gradient boosting model using the motif distribution. And then we predict the degree distribution from motif distribution.
+    \item {\bf Candidate graph generation.} Second, with the degree distribution, we generate a random graph based on degree distribution as candidate graph for our problem.
+    \item {\bf Graph refinement.} Second, the random graph is fed to a heuristic model to refine the graph. The model incorporates the several strategies to refine the graph satisfied the given motif distribution.
+\end{itemize}
+
+\subsection{Degree distribution generation} 
+
+For a given motif distribution, we use the motif distribution to predict degree distribution. The idea of this problem is using the motif distribution as a feature to train a model, and then predict a degree distribution for the given motif distribution. More precisely, we define a gradient boosting model to train a model. Gradient Boosting Decision Tree~\cite{friedman2002stochastic} is a useful machine learning method for regression problems, which also an ensemble method with combine multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the arbitrary differentiable loss function which is same as logistic regression. 
+
+
+=======================================
+
 In this section, we propose a heuristic method for generating the required
 graph.
 
