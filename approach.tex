@@ -62,4 +62,26 @@ Vertex $4$ is not always an immediate neighbor of vertex $1$ or vertex $2$.  How
 \item Vertex $3$ and $4$ are connected, and only one of vertex $1$ and $2$ are connected to vertex $3$.  In this case, connecting vertex $1$ and $2$ creates a four-line motif.
 \end{itemize}
 
-It is much faster to test for these cases than to do the normal computations (which would involve finding the induced subgraph on those four vertices, then testing it to see if it was either of the 4-motifs).  So implementing this optimization produces an enormous speedup, allowing us to perform several thousand rewiring steps in one day.
+It is much faster to test for these cases than to do the normal
+computations (which would involve finding the induced subgraph on those
+four vertices, then testing it to see if it was either of the 4-motifs).
+So implementing this optimization produces an enormous speedup, allowing us
+to perform several thousand rewiring steps in one day.  Each rewiring step
+is $O((d_1 + d_2)^2)$, where $d_1$ is the degree of vertex $v_1$, $d_2$
+is the degree of vertex $v_2$, and $d_1 + d_2$ is an upper bound on the 
+number of first-degree neighbors of $v_1$ and $v_2$.
+
+\subsection{Random restarts}
+
+Hill climbing is an imperfect solution since it is easy to get stuck at
+local minima.  We fix this with the method of random restarts.  When we
+reach a local minimum, we save the graph and begin rewiring edges randomly.
+After this we run hill climbing until we reach another local minimum, then 
+repeat the process.  At the end of the computation we return the graph with
+lowest error.
+
+We assume the algorithm has reached a local minimum if we have gone through
+$|E|$ consecutive rewiring steps without changing the graph.  At this
+point, we rewire $|E|/8$ edge pairs randomly and proceed with hill
+climbing.  Preliminary results for this approach are presented in 
+Section~\ref{sec:exp}.
