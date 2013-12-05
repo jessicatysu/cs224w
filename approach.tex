@@ -10,7 +10,11 @@ In this section, we present a approach framework for generating the graph. At th
 
 \subsection{Degree distribution generation} 
 
-For a given motif distribution, we use the motif distribution to predict degree distribution. The idea of this problem is using the motif distribution as a feature to train a model, and then predict a degree distribution for the given motif distribution. More precisely, we define a gradient boosting model to train a model. Gradient Boosting Decision Tree~\cite{friedman2002stochastic} is a useful machine learning method for regression problems, which also an ensemble method with combine multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the arbitrary differentiable loss function which is same as logistic regression. 
+For a given motif distribution, we use the motif distribution to predict degree distribution. The idea of this problem is using the motif distribution as a feature to train a model, and then predict a degree distribution for the given motif distribution. More precisely, we use gradient boosting as the main regression method to train a model. Gradient Boosting Tree~\cite{friedman2002stochastic} is a useful machine learning method for regression problems, which also an ensemble method with combine multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the arbitrary differentiable loss function which is same as logistic regression. Here we use the python package build in~\cite{pedregosa2011scikit}. Our approach shows good performance. We achieved less than 1\% on Average Relative Error.
+
+\subsection{Candidate graph generation}
+
+According the degree distribution we got at stage 1, we use 
 
 
 =======================================
