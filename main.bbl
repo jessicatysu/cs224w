@@ -1,9 +1,25 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{albert2002statistical}
 R.~Albert and A.-L. Barab{\'a}si.
 \newblock Statistical mechanics of complex networks.
 \newblock {\em Reviews of modern physics}, 74(1):47, 2002.
+
+\bibitem{alon2007network}
+U.~Alon.
+\newblock Network motifs: theory and experimental approaches.
+\newblock {\em Nature Reviews Genetics}, 8(6):450--461, 2007.
+
+\bibitem{bayati2010sequential}
+M.~Bayati, J.~H. Kim, and A.~Saberi.
+\newblock A sequential algorithm for generating random graphs.
+\newblock {\em Algorithmica}, 58(4):860--910, 2010.
+
+\bibitem{bhuiyan2012guise}
+M.~A. Bhuiyan, M.~Rahman, M.~Rahman, and M.~Al~Hasan.
+\newblock Guise: Uniform sampling of graphlets for large graph analysis.
+\newblock In {\em Data Mining (ICDM), 2012 IEEE 12th International Conference
+  on}, pages 91--100. IEEE, 2012.
 
 \bibitem{erdds1959random}
 P.~Erdos and A.~Renyi.
@@ -21,10 +37,26 @@ J.~H. Friedman.
 \newblock {\em Computational Statistics \& Data Analysis}, 38(4):367--378,
   2002.
 
+\bibitem{milo2002network}
+R.~Milo, S.~Shen-Orr, S.~Itzkovitz, N.~Kashtan, D.~Chklovskii, and U.~Alon.
+\newblock Network motifs: simple building blocks of complex networks.
+\newblock {\em Science}, 298(5594):824--827, 2002.
+
+\bibitem{molloy1995critical}
+M.~Molloy and B.~Reed.
+\newblock A critical point for random graphs with a given degree sequence.
+\newblock {\em Random structures \& algorithms}, 6(2-3):161--180, 1995.
+
 \bibitem{newman2009random}
 M.~E. Newman.
 \newblock Random graphs with clustering.
 \newblock {\em Physical review letters}, 103(5):058701, 2009.
+
+\bibitem{pedregosa2011scikit}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, et~al.
+\newblock Scikit-learn: Machine learning in python.
+\newblock {\em The Journal of Machine Learning Research}, 12:2825--2830, 2011.
 
 \bibitem{milo04random}
 S.~I. M.~N. R.~Milo, N.~Kashtan and U.~Alon.
@@ -32,10 +64,23 @@ S.~I. M.~N. R.~Milo, N.~Kashtan and U.~Alon.
   sequences.
 \newblock {\em arXiv:cond-mat/0312028v2}, 2004.
 
+\bibitem{rao1996markov}
+A.~R. Rao, R.~Jana, and S.~Bandyopadhyay.
+\newblock A markov chain monte carlo method for generating random (0,
+  1)-matrices with given marginals.
+\newblock {\em Sankhy{\=a}: The Indian Journal of Statistics, Series A}, pages
+  225--242, 1996.
+
 \bibitem{chuanqi}
 C.~Shen.
 \newblock Curis project on clustering social networks.
 \newblock 2013.
+
+\bibitem{shen2002network}
+S.~S. Shen-Orr, R.~Milo, S.~Mangan, and U.~Alon.
+\newblock Network motifs in the transcriptional regulation network of
+  escherichia coli.
+\newblock {\em Nature genetics}, 31(1):64--68, 2002.
 
 \bibitem{watts1998collective}
 D.~J. Watts and S.~H. Strogatz.

@@ -1,6 +1,37 @@
 \section{Related work}
 \label{sec:related}
 
+\vpara{Motif} Graph motif is an important local property which are defined as recurrent and statistically significant subgraph or patterns. Many research related to graph motifs. 
+Shen-Orr et al.~\cite{shen2002network} present new algorithms for systematically detecting network motifs to one of the best-characterized regulation networks, that of direct transcriptional interactions in Escherichia coli. 
+Milo et al.~\cite{milo2002network} use the network motif to uncover the complex networks structural design principles.
+Alon et al.~\cite{alon2007network} review network motifs and their functions, with an emphasis on experimental studies.
+Recently, Bhuiyan et al.~\cite{bhuiyan2012guise} propose a method called \textit{GUISE}, which uses a Markov Chain Monte Carlo (MCMC) sampling method for constructing the approximate GFD\footnote{Graphlet frequency distribution, Graphlet is also called motif} of a large network.
+
+\vpara{Generating random graph} Generating random is an important problem in social network analysis. 
+
+Most research is to generate random graph based on degree. 
+Molloy et al.~\cite{molloy1995critical} provide a model for generating random graphs with given degree sequence. 
+Rao et al.~\cite{rao1996markov} propose an MCMC based model using switches along alternating cycles for generating random. 
+Bayati et al.~\cite{bayati2010sequential} present a nearly-linear time algorithm for counting and randomly generating simple graphs with a given degree sequence in a certain range. 
+Milo et al.~\cite{milo04random} propose a approach for generating a random graph with prescribed degree sequence. Our approach inspired by Milos's and it begins by generating an arbitrary graph with that degree sequence.  (This can be done by giving each node a certain number of ``half-edges,'' then connecting them randomly to form the edges of the graph.)  One this graph is generated, he chooses pairs of edges at random and swaps the endpoints, repeating this step until the graph is sufficiently ``randomized.''
+
+\begin{algorithm}
+\caption{Milo's approach for generating random graphs with prescribed degree sequences.}
+\label{algorithm:milo}
+\begin{algorithmic}
+Generate graph $G = (V, E)$ with required degree sequence\\
+\While{Markov chain displays insufficient mixing}{
+    Choose $e_1, e_2 \in E$ at random\\
+    Add edges $(e_1.Src, e_2.Dst)$, $(e_2.Src, e_1.Dst)$\\
+    Delete edges $(e_1.Src, e_1.Dst)$, $(e_2.Src, e_2.Dst)$\\
+}
+\end{algorithmic}
+\end{algorithm}
+
+This ``rewiring'' step is innovative because it preserves both the number of edges and the degree of each node.  For this reason we use the same rewiring step in our algorithm.
+
+\hide{
+
 Our approach is inspired by Milo's approach for generating a random graph with prescribed degree sequence.~\cite{milo04random} He begins by generating an arbitrary graph with that degree sequence.  (This can be done by giving each node a certain number of ``half-edges,'' then connecting them randomly to form the edges of the graph.)  One this graph is generated, he chooses pairs of edges at random and swaps the endpoints, repeating this step until the graph is sufficiently ``randomized.''
 
 \begin{algorithm}
@@ -17,3 +48,4 @@ Generate graph $G = (V, E)$ with required degree sequence\\
 \end{algorithm}
 
 This ``rewiring'' step is innovative because it preserves both the number of edges and the degree of each node.  For this reason we use the same rewiring step in our algorithm.
+}
