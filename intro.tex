@@ -1,21 +1,5 @@
 \section{Introduction}
 \label{sec:intro}
-\begin{figure}[t]
-\centering
-\includegraphics[width=3in]{Figures/motifs1.eps}
-\caption{Graphical representation of the motifs.}
-\label{fig:motif}
-\end{figure}
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=3in]{Figures/network.eps}
-\caption{A network with motif distribution \{numNodes: 25, numEdges: 44,
-mtThreeClosed: 21, mtThreeOpen: 151, mfFourLine: 134,
-mfFourSquare: 1, mfFourStar: 305, mfFourTriangleEdge: 155,
-mfFourSquareDiag: 26, mfFourComplete: 2\}.}
-\label{fig:network}
-\end{figure}
 
 Many real-world systems can be modeled by graphs, from power grids to arXiv citations to friendships on Facebook.  Early models attempted to model all systems with the same type of graph.  For example, the Erdos-Renyi random graph~\cite{erdds1959random}\cite{erdos1960random} models all networks with $n$ participants and $m$ connections with a graph of $n$ nodes and $m$ randomly placed edges.  The Watts-Strogatz model~\cite{watts1998collective} models all networks by connecting nodes to their nearest neighbors, then filling the rest of the graph with randomly placed edges.
 
@@ -37,6 +21,14 @@ user himself.  Finding the motif balance allows us to distinguish
 also many other types of networks; email forwarding chains would have a
 large number of line graphs, as would product recommendation graphs.)
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=3in]{Figures/motifs1.eps}
+\caption{Graphical representation of the motifs.}
+\label{fig:motif}
+\end{figure}
+
+
 These structures are not fully captured by models that look only at
 3-motifs or clustering coefficients.  Knowing only the number of triangles
 (Three Closed) and triads (Three Open), we could not tell the difference
@@ -55,6 +47,18 @@ clusters corresponded closely to real-life functionality~\cite{chuanqi}.
 Therefore, by generating graphs with similar motif counts, we hope to build 
 graphs with similar function to real-world networks.
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=3in]{Figures/network.eps}
+\caption{A network with motif distribution \{numNodes: 25, numEdges: 44,
+mtThreeClosed: 21, mtThreeOpen: 151, mfFourLine: 134,
+mfFourSquare: 1, mfFourStar: 305, mfFourTriangleEdge: 155,
+mfFourSquareDiag: 26, mfFourComplete: 2\}.}
+\label{fig:network}
+\end{figure}
+
 %While it is difficult to find exact solutions, we use hill-climbing to find approximate solutions that produce good results in practice.
 
-%\vpara{Organization} Section \ref{sec:background} describe some basic concepts through the paper; Section \ref{sec:related} discusses related work; Section \ref{sec:problem} formulates the problem; Section \ref{sec:approach} explains the proposed model; Section \ref{sec:exp} presents the experimental results; finally,  and Section \ref{sec:futurework} concludes the future work.
+The rest of the paper is organized as follow: Section \ref{sec:problem} formulates the problem; Section \ref{sec:related} discusses related work; Section \ref{sec:approach} explains the proposed framework and describes the algorithm for generating random graph; Section \ref{sec:exp} presents the experimental results; finally,  and Section \ref{sec:futurework} concludes the future work.
+
+
