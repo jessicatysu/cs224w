@@ -10,9 +10,41 @@ In this section, we present a approach framework for generating the graph. At th
 
 \subsection{Degree distribution generation} 
 
+In order to better generating the random graph, we assume that all the graph we generated is based on power low degree distribution. The basic idea is using the motif distribution as features to predict the degree distribution. In this paper, we use Gradient Boosted Regression Trees (GBRT)~\cite{friedman2002stochastic} as main regression model to train the model. Gradient Boosted Regression Trees is a useful machine learning method for regression problems, which also an ensemble method with combine multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the arbitrary differentiable loss function which is square loss function\footnote{Square Loss: $\mathcal{L} = (f(x) - y)^2$, here we use $\mathcal{L}$ to scribe the squared loss term, $y$ represents the label and $f(x)$ represents the predict score.}. 
+
+More precisely, GBRT trains a lot of small tree regression models (the depth of each tree is 5), each with high bias. Instead of using uniform weight of each model that are avoid overfitting, GBRT focus on adding new tree to minimize the current remaining regression error at each iteration. Let $f(x_i)$ denote the predict score of sample $x_i$ and the loss function $\mathcal{L}(f(x_1),...,f(x_n))$ of the model reaches minimum if $f(x_i) = y_i$ for all $x_i$. For each new tree $T_i$, it's added into existing classifier and the current prediction $P(x_i)$ is updated with a gradient step
+$$P(x_i) \leftarrow P(x_i) + \alpha \frac{\mathcal{L}}{P(x_i)}$$
+\noindent where $\alpha$ is the learning rate; and the gradient $\frac{\mathcal{L}}{P(x_i)}$ is approximated with the prediction of regression tree~\cite{zheng2007general}. Algorithm~\ref{algo:gbrt} shows the detail of GBRT.
+
+\begin{algorithm}
+\caption{Gradient Boosted Regression Trees (GBRT). DT means the decision tree model which has three parameters, data $D$, #features\mbox{ }f and the depth $d$ of tree.}\label{algo:gbrt}
+\begin{algorithmic}
+\State \textbf{Input:} Data set $\mathcal{D} =\{(x_1, y_1),..., (x_n, y_n)\}$, learning rate\mbox{ }\alpha, \#Trees\mbox{ }$M$, depth\mbox{ }$d$ \\
+\State \textbf{Output:} Combined tree model T
+
+\State Initialization: $\forall i, p_i \leftarrow y_i$
+
+\For {$i = 1$ to $M$} {
+    $T_i \leftarrow DT(\{(x_1, p_1),..., (x_n, p_n)\}, f, d)$ \\
+    \For {$j = 1$ to $n$} {
+        $p_i \leftarrow p_i - \alpha T_i(x_i)$\\
+    }
+}
+$T \leftarrow \alpha \sum_{i = 1}^M T_i$\\
+\Return T\\
+\end{algorithmic}
+\end{algorithm}
+
+\vpara{Implement Note.} In the Decision Tree model, we train $M = 1000$ trees and for each tree tree random select $f = \#\mbox{features} / 10$ and set the depth to 5. If $M$ is too big, the algorithm starts overfitting. As for learning rate, we use $\alpha = 0.001$.
+
+
+\hide{We use the motif distribution to predict the degree distribution.
 For a given motif distribution, we use the motif distribution to predict degree distribution. The idea of this problem is using the motif distribution as a feature to train a model, and then predict a degree distribution for the given motif distribution. More precisely, we use gradient boosting as the main regression method to train a model. Gradient Boosting Tree~\cite{friedman2002stochastic} is a useful machine learning method for regression problems, which also an ensemble method with combine multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the arbitrary differentiable loss function which is same as logistic regression. Here we use the python package build in~\cite{pedregosa2011scikit}. Our approach shows good performance. We achieved less than 1\% on Average Relative Error.
+}
 
 \vpara{Evaluation Measures} To quantitatively evaluate the performance of predicting the degree distribution, we conducted experiments with different networks, for each network we and evaluated the approaches in terms of \textbf{Average Relative Error (ARE)} by using the maximum.
+
+\vpara{Prediction Performance} We use 168 different network as data set to evaluate the proposed model. We use 10-fold cross validation to \textbf{Average Relative Error (ARE)}. In order to valid the bias, we test the data 10 times, and get the prediction alpha for each network. Finally, the model achieves $0.005521 \pm 0.00316$.
 
 \subsection{Candidate graph generation}
 
@@ -38,7 +70,7 @@ where $\ell$ is the number of different motif types.
 
 We use the configuration model to generate a random graph with the required degree sequence.  Then at each step we choose two edges (at random) and swap their endpoints.  We count the motifs and compare the error with the new counts to the error with the old counts.  If the new counts give a smaller error, we keep the new graph; otherwise, we discard it.
 
-\begin{algorithm}
+\begin{algorithm}[t]
 \caption{Naive approach}
 \label{algorithm:naive}
 \begin{algorithmic}
@@ -70,7 +102,7 @@ This is still fairly slow, so we apply one final optimization.  We notice that f
 
 Vertex $4$ is not always an immediate neighbor of vertex $1$ or vertex $2$.  However, when it's not an immediate neighbor of either endpoint, we can do a lot less computation than we would have to otherwise.  We can break these situations up into three cases:
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=3in]{Figures/case1.eps}
 \label{fig:case}

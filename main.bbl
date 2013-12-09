@@ -52,12 +52,6 @@ M.~E. Newman.
 \newblock Random graphs with clustering.
 \newblock {\em Physical review letters}, 103(5):058701, 2009.
 
-\bibitem{pedregosa2011scikit}
-F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
-  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, et~al.
-\newblock Scikit-learn: Machine learning in python.
-\newblock {\em The Journal of Machine Learning Research}, 12:2825--2830, 2011.
-
 \bibitem{milo04random}
 S.~I. M.~N. R.~Milo, N.~Kashtan and U.~Alon.
 \newblock On the uniform generation of random graphs with prescribed degree
@@ -86,5 +80,12 @@ S.~S. Shen-Orr, R.~Milo, S.~Mangan, and U.~Alon.
 D.~J. Watts and S.~H. Strogatz.
 \newblock Collective dynamics of small-world networks.
 \newblock {\em Nature}, 393(6684):440--442, 1998.
+
+\bibitem{zheng2007general}
+Z.~Zheng, H.~Zha, T.~Zhang, O.~Chapelle, K.~Chen, and G.~Sun.
+\newblock A general boosting method and its application to learning ranking
+  functions for web search.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1697--1704, 2007.
 
 \end{thebibliography}
