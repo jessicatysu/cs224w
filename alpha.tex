@@ -1,2 +1,84 @@
 \section{Predicting Degree Distribution From Motif Counts}
 \label{sec:alpha}
+
+%In this section, we present a approach framework for generating the graph. At the high level, our proposed %framework consists of two stage.
+%\begin{itemize}
+%    \item {\bf Degree distribution generation.} First, given a certain motif distribution, we train a gradient boosting %model using the motif distribution. And then we predict the degree distribution from motif distribution.
+%    \item {\bf Candidate graph generation.} Second, with the degree distribution, we generate a random graph based %on degree distribution as candidate graph for our problem.
+%    \item {\bf Graph refinement.} Second, the random graph is fed to a heuristic model to refine the graph. The model %incorporates the several strategies to refine the graph satisfied the given motif distribution.
+%\end{itemize}
+
+In previous sections we assumed that we knew the degree distribution of the graph.  Now we relax this assumption and predict the degree distribution from the motif counts.  In the future we will use this to generate graphs given only their motif counts.
+
+We assume that all the graphs we generate have a power law degree distribution.  We use the motif counts as features to predict the power law exponent $\alpha$.  Given $\alpha$ and a normalization constant, producing an actual distribution is straightforward.
+
+In this paper, we use Gradient Boosted Regression Trees (GBRT)~\cite{friedman2002stochastic} as the main regression model to train the model. Gradient Boosted Regression Trees is a useful machine learning method for regression problems, which is also an ensemble method that combines multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the loss function
+\begin{equation}
+\label{eqn:loss}
+\mathcal{L} = (f(x) - y)^2
+\end{equation}
+
+where $y$ is the label and $f(x)$ is our prediction for $y$.
+
+%\footnote{Square Loss: $\mathcal{L} = (f(x) - y)^2$, here we use $\mathcal{L}$ to scribe the squared loss term, $y$ represents the label and $f(x)$ represents the predict score.}. 
+
+More precisely, GBRT trains a lot of small tree regression models (the depth of each tree is 5), each with high bias. Instead of using uniform weight of each model that are avoid overfitting, GBRT focus on adding new tree to minimize the current remaining regression error at each iteration. Let $f(x_i)$ denote the predict score of sample $x_i$ and the loss function $\mathcal{L}(f(x_1),...,f(x_n))$ of the model reaches minimum if $f(x_i) = y_i$ for all $x_i$. For each new tree $T_i$, it's added into existing classifier and the current prediction $P(x_i)$ is updated with a gradient step
+$$P(x_i) \leftarrow P(x_i) + \beta \frac{\mathcal{L}}{P(x_i)}$$
+\noindent where $\beta$ is the learning rate; and the gradient $\frac{\mathcal{L}}{P(x_i)}$ is approximated with the prediction of regression tree~\cite{zheng2007general}. Algorithm~\ref{algo:gbrt} shows the detail of GBRT.
+
+\begin{algorithm}
+\caption{Gradient Boosted Regression Trees (GBRT). DT means the decision tree model which has three parameters, data $D$, #features~f and the depth $d$ of tree.}\label{algo:gbrt}
+\begin{algorithmic}
+\State \textbf{Input:} Data set $\mathcal{D} =\{(x_1, y_1),..., (x_n, y_n)\}$, learning rate~\beta, \#\text{Trees}~$M$, \text{depth}~$d$ \\
+\State \textbf{Output:} Combined tree model T
+
+\State Initialization: $\forall i, p_i \leftarrow y_i$
+
+\For {$i = 1$ to $M$} {
+    $T_i \leftarrow DT(\{(x_1, p_1),..., (x_n, p_n)\}, f, d)$ \\
+    \For {$j = 1$ to $n$} {
+        $p_i \leftarrow p_i - \beta T_i(x_i)$\\
+    }
+}
+$T \leftarrow \beta \sum_{i = 1}^M T_i$\\
+\Return T\\
+\end{algorithmic}
+\end{algorithm}
+
+\vpara{Implementation note.} In the Decision Tree model, we train $M = 1000$ trees and for each tree randomly select $f = \#\mbox{features} / 10$ and set the depth to 5. If $M$ is too big, the algorithm starts overfitting. As for learning rate, we use $\beta = 0.001$.
+
+
+\hide{We use the motif distribution to predict the degree distribution.
+For a given motif distribution, we use the motif distribution to predict degree distribution. The idea of this problem is using the motif distribution as a feature to train a model, and then predict a degree distribution for the given motif distribution. More precisely, we use gradient boosting as the main regression method to train a model. Gradient Boosting Tree~\cite{friedman2002stochastic} is a useful machine learning method for regression problems, which also an ensemble method with combine multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the arbitrary differentiable loss function which is same as logistic regression. Here we use the python package build in~\cite{pedregosa2011scikit}. Our approach shows good performance. We achieved less than 1\% on Average Relative Error.
+}
+
+\vpara{Evaluation measures.} To quantitatively evaluate the performance of our model, we conducted experiments with different networks and evaluated the approaches in terms of maximum average relative error (ARE).
+
+\vpara{Prediction performance.} We use 168 different networks to evaluate the proposed model. We use 10-fold cross validation to average relative error (ARE). In order to validate the bias, we test the data 10 times, and get the predicted $\alpha$ for each network.  Some sample $\alpha$ are shown in Table~\ref{table:alpha}.  Finally, the model achieves an average relative error of $0.005521 \pm 0.00316$.
+
+%\subsection{Candidate graph generation}
+%
+%According the degree distribution we got at stage 1, we use 
+%
+%
+%=======================================
+%
+%
+\begin{table}[t]
+\centering
+\label{table:alpha}
+\caption{Predicted degree distribution exponents.}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Network & $\alpha$ & $\hat{\alpha}$ & Relative error\\\hline
+aut-as19971108.txt & 2.53315 & 2.52657 & 0.00259 \\\hline
+aut-as19990628.txt & 2.52159 & 2.54907 & -0.01090 \\\hline
+cit-scimet.txt & 1.95277 & 1.93871 & 0.00720 \\\hline
+col-ca-GrQc.txt & 1.88493 & 1.86740 & 0.00930 \\\hline
+col-netscience.txt & 1.89612 & 1.89536 & 0.00039 \\\hline
+met-HI.txt & 1.88824 &  1.87993 & 0.00439 \\\hline
+ppi-ppiall.txt & 1.89357 & 1.88467 & 0.00469 \\\hline
+ppi-ppiapms.txt & 1.89285 & 1.87544 & 0.00919 \\\hline
+pwr-power.txt & 1.78450 &  1.78343 & 0.00059 \\\hline
+\end{tabular}
+\end{table}

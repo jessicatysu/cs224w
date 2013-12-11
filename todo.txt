@@ -1,0 +1,76 @@
+
+count number of random restarts
+explain O better
+lengthen abstract
+
+Suggested by Peter:
+
+1) Explain why 4-motifs are an important property of a graph, and what
+properties of the real-world graph we hope to capture by counting 4-motifs.
+Discuss what some of the motifs represent in terms of transitivity or
+interpersonal relationships.
+  
+  A social network with many star graphs might be more like Twitter, which
+  is celebrity based.  A social network with many complete graphs would be
+  more like Facebook, which is used within groups of acquaintances.  A
+  social network with many line graphs might be like Amazon recommendations
+  (which may propagate like chains) or email forwards.  It would be
+  interesting to see if a given network is more celebrity based, friendship
+  based, or chain based.  This sort of thing is not obvious on networks
+  like Quora, where there is a mixture of following your friends and
+  following celebrities you don't know.
+
+- Star graph represents a popular person, a social hub where three people
+  know a single person but don't know each other.  On an Internet graph it
+  would represent a hub, and on a power grid it might represent a power
+  plant.  In a citation network a node that is part of many star graphs is
+  a highly cited paper or a paper that cites many papers (such as a review
+  article or a paper relevant to several different fields).
+
+- Line graph
+
+- Complete graph
+    In a coauthorship network this would often occur if 4 or more people
+    collaborated on the same paper.
+    In a social network it might occur if the same 4 people always hung out
+    with each other.
+
+- Triangle with edge
+
+- One edge missing
+
+- Cycle
+
+2) Explain why we are switching from random graph to arbitrary graph
+    - It is an easier problem and random graph is an interesting avenue for 
+    further research.
+   Explain why we can't trivially return the original graph
+    - That method would not be easily generalizable to finding a random graph.
+
+3) Find runtime given optimization.  Find runtime of the rewiring step as a
+function of the degrees of the nodes involved.
+    Optimization I: (# neighbors)(# second degree neighbors)
+    Optimization II: (# neighbors)^2 so roughly (d1 + d2)^2 (minus an
+    intersection term)
+
+4) Use optimizations to maintain the motif counts as the graph evolves over
+time.
+
+My program already does this.
+It could be useful for social networks to keep the number of motifs in order to
+study the social dynamics of the graphs.  Do people mostly use them
+within their social circles (complete graphs like Facebook), or is it more a 
+celebrity based system like Twitter (star graphs)?
+
+5) Fix lines in P_rewire.  Say what the different lines within each plot
+represent, and average over a larger window.
+
+
+
+---
+6) Identify each network.
+    Ask Jure?
+
+7) Random graphs with restarts (smaller graphs).  Compare to existing
+graphs.  Run existing algorithm on pro-polbooks.
+8) Predict alpha.
