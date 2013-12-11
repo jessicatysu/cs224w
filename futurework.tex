@@ -1,7 +1,9 @@
 \section{Future work}
 \label{sec:futurework}
 
-Future work will 
+So far we know how to (approximately) generate graphs with given motif counts, assuming we know the degree distribution of the graph.  We can also predict properties of the degree distribution from the motif counts.  The next logical step is to use the predicted degree distribution to generate a graph.
+
+We also hope to improve the random restarts method by increasing the number of unsuccessful rewires required for a random restart.  We will also tweak the number of random rewirings that happen at each random restart.  Currently those numbers are $|E|$ and $|E|/8$, but we intend to run simulations for several different parameter values.
 
 %Our current algorithms assume that we know the degree distribution of the graph.  This is fine if we have the graph of a real-world social network and we are trying to build a model to compare it to.  However, it fails if we are given the motif counts only.
 

@@ -45,7 +45,7 @@ We can speed this up by counting motifs incrementally.  Instead of considering t
 
 (In our algorithm we break the rewiring step into four steps, two edge deletions and two edge creations.  This way we only measure the effect of one edge creation/deletion step at a time.)
 
-This is still fairly slow, so we apply one final optimization.  We notice that for a 4-motif to be affected by the edge changes, vertices $1$ and $2$ of the motif must be endpoints of the edge.  Vertex $3$ must be an immediate neighbor of an endpoint, and vertex $4$ is either an immediate neighbor or a second-degree neighbor.  Ordinarily, we would have to loop through the immediate neighbors to find all possibilities for vertex $3$, and perform an inner loop through the second degree neighbors to find all possibilities for vertex $4$.  But if vertex $4$ was always an immediate neighbor, we could loop through the immediate neighbors both times, which would speed up the algorithm considerably.
+This is still fairly slow, so we apply one final optimization.  We notice that for a 4-motif to be affected by the edge changes, vertices $1$ and $2$ of the motif must be endpoints of the edge.  Vertex $3$ must be an immediate neighbor of an endpoint, and vertex $4$ is either an immediate neighbor or a second-degree neighbor (i.e. a neighbor of a neighbor).  Ordinarily, we would have to loop through the immediate neighbors to find all possibilities for vertex $3$, and perform an inner loop through the second degree neighbors to find all possibilities for vertex $4$.  But if vertex $4$ was always an immediate neighbor, we could loop through the immediate neighbors both times, which would speed up the algorithm considerably.
 
 Vertex $4$ is not always an immediate neighbor of vertex $1$ or vertex $2$.  However, when it's not an immediate neighbor of either endpoint, we can do a lot less computation than we would have to otherwise.  We can break these situations up into three cases:
 
@@ -65,10 +65,14 @@ It is much faster to test for these cases than to do the normal
 computations (which would involve finding the induced subgraph on those
 four vertices, then testing it to see if it was either of the 4-motifs).
 So implementing this optimization produces an enormous speedup, allowing us
-to perform several thousand rewiring steps in one day.  Each rewiring step
-is $O((d_1 + d_2)^2)$, where $d_1$ is the degree of vertex $v_1$, $d_2$
+to perform several thousand rewiring steps in one day.
+
+Each rewiring step is $O((d_1 + d_2)^2)$, where $d_1$ is the degree of vertex $v_1$, $d_2$
 is the degree of vertex $v_2$, and $d_1 + d_2$ is an upper bound on the 
-number of first-degree neighbors of $v_1$ and $v_2$.
+number of first-degree neighbors of $v_1$ and $v_2$.  This is because the
+vertex pairs that require the most computation are ones where both vertices
+are first-degree neighbors.  To consider all possible pairs we must iterate through
+the first degree neighbors twice, hence the bound $O((d_1 + d_2)^2)$.
 
 \subsection{Random restarts}
 
