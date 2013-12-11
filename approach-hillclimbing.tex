@@ -22,13 +22,13 @@ We use the configuration model to generate a random graph with the required degr
 \label{algorithm:naive}
 \begin{algorithmic}
 Initialize graph $G = (V, E)$ with prescribed degree sequence\\
-motifCounts \leftarrow CountMotifs($G$)\\
+motifCounts \leftarrow \text{CountMotifs}($G$)\\
 \Repeat{computation time limit exceeded} {
 	Choose $e_1, e_2 \in E$ at random\\
 	Add edges $(e_1.Src, e_2.Dst)$, $(e_2.Src, e_1.Dst)$\\
 	Delete edges $(e_1.Src, e_1.Dst)$, $(e_2.Src, e_2.Dst)$\\
-	newMotifCounts \leftarrow CountMotifs($G$)\\
-	\eIf {error(newMotifCounts) < error(motifCounts)} {
+	newMotifCounts \leftarrow \text{CountMotifs}($G$)\\
+	\eIf {\text{error}(newMotifCounts) < \text{error}(motifCounts)} {
 		motifCounts \leftarrow newMotifCounts\\
 	} {
 		Return graph to original state\\
@@ -82,4 +82,4 @@ lowest error.
 We assume the algorithm has reached a local minimum if we have gone through
 $|E|$ consecutive rewiring steps without changing the graph.  At this
 point, we rewire $|E|/8$ edge pairs randomly and proceed with hill
-climbing.  Results for this approach are presented in Section~\ref{sec:exp}.
+climbing.  Results for this approach are presented in Section~\ref{sec:results-hillclimbing}.

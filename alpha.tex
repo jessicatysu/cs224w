@@ -12,22 +12,23 @@ In previous sections we assumed that we knew the degree distribution of the grap
 
 We assume that all the graphs we generate have a power law degree distribution.  We use the motif counts as features to predict the power law exponent $\alpha$.  Given $\alpha$ and a normalization constant, producing an actual distribution is straightforward.
 
-In this paper, we use Gradient Boosted Regression Trees (GBRT)~\cite{friedman2002stochastic} as the main regression model to train the model. Gradient Boosted Regression Trees is a useful machine learning method for regression problems, which is also an ensemble method that combines multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the loss function
+In this paper, we use Gradient Boosted Regression Trees (GBRT)~\cite{friedman2002stochastic} as the main regression model. Gradient Boosted Regression Trees is a useful machine learning method for regression problems, which is also an ensemble method that combines multiple weak prediction models. It constructs the model in a stage-wise fashion and generalizes the model by optimizing an arbitrary differentiable loss function which in our case is the square loss function
 \begin{equation}
 \label{eqn:loss}
 \mathcal{L} = (f(x) - y)^2
 \end{equation}
 
-where $y$ is the label and $f(x)$ is our prediction for $y$.
+\noindent where $y$ is the label and $f(x)$ is our prediction for $y$.
 
 %\footnote{Square Loss: $\mathcal{L} = (f(x) - y)^2$, here we use $\mathcal{L}$ to scribe the squared loss term, $y$ represents the label and $f(x)$ represents the predict score.}. 
 
-More precisely, GBRT trains a lot of small tree regression models (the depth of each tree is 5), each with high bias. Instead of using uniform weight of each model that are avoid overfitting, GBRT focus on adding new tree to minimize the current remaining regression error at each iteration. Let $f(x_i)$ denote the predict score of sample $x_i$ and the loss function $\mathcal{L}(f(x_1),...,f(x_n))$ of the model reaches minimum if $f(x_i) = y_i$ for all $x_i$. For each new tree $T_i$, it's added into existing classifier and the current prediction $P(x_i)$ is updated with a gradient step
+More precisely, GBRT trains a lot of small tree regression models (the depth of each tree is 5), each with high bias. Instead of using a uniform weight of each model to prevent overfitting, GBRT focus on adding new trees to minimize the current remaining regression error at each iteration.Let $f(x_i)$ denote the prediction score of sample $x_i$ and $\mathcal{L}(f(x_1),...,f(x_n))$ as the loss function of the model, which reaches a minimum if $f(x_i) = y_i$ for all $x_i$. For each new tree $T_i$, that is added into the existing classifier and the current prediction $P(x_i)$, we use the following step:
+
 $$P(x_i) \leftarrow P(x_i) + \beta \frac{\mathcal{L}}{P(x_i)}$$
-\noindent where $\beta$ is the learning rate; and the gradient $\frac{\mathcal{L}}{P(x_i)}$ is approximated with the prediction of regression tree~\cite{zheng2007general}. Algorithm~\ref{algo:gbrt} shows the detail of GBRT.
+\noindent where $\beta$ is the learning rate, and the gradient $\frac{\mathcal{L}}{P(x_i)}$ is approximated with the prediction score of regression tree~\cite{zheng2007general}. Algorithm~\ref{algo:gbrt} shows the details of GBRT.
 
 \begin{algorithm}
-\caption{Gradient Boosted Regression Trees (GBRT). DT means the decision tree model which has three parameters, data $D$, #features~f and the depth $d$ of tree.}\label{algo:gbrt}
+\caption{Gradient Boosted Regression Trees (GBRT). DT indicates the decision tree model which has three parameters, data $D$, #features~f and the depth $d$ of tree.}\label{algo:gbrt}
 \begin{algorithmic}
 \State \textbf{Input:} Data set $\mathcal{D} =\{(x_1, y_1),..., (x_n, y_n)\}$, learning rate~\beta, \#\text{Trees}~$M$, \text{depth}~$d$ \\
 \State \textbf{Output:} Combined tree model T
@@ -52,9 +53,9 @@ $T \leftarrow \beta \sum_{i = 1}^M T_i$\\
 For a given motif distribution, we use the motif distribution to predict degree distribution. The idea of this problem is using the motif distribution as a feature to train a model, and then predict a degree distribution for the given motif distribution. More precisely, we use gradient boosting as the main regression method to train a model. Gradient Boosting Tree~\cite{friedman2002stochastic} is a useful machine learning method for regression problems, which also an ensemble method with combine multiple weak prediction models. It makes the model in a stage-wise fashion and generalizes the model by optimization of the arbitrary differentiable loss function which is same as logistic regression. Here we use the python package build in~\cite{pedregosa2011scikit}. Our approach shows good performance. We achieved less than 1\% on Average Relative Error.
 }
 
-\vpara{Evaluation measures.} To quantitatively evaluate the performance of our model, we conducted experiments with different networks and evaluated the approaches in terms of maximum average relative error (ARE).
+\vpara{Evaluation measures.} To quantitatively evaluate the performance of our model, we conducted experiments with different networks.  For each network, we evaluated the approach in terms of average relative error (ARE).
 
-\vpara{Prediction performance.} We use 168 different networks to evaluate the proposed model. We use 10-fold cross validation to average relative error (ARE). In order to validate the bias, we test the data 10 times, and get the predicted $\alpha$ for each network.  Some sample $\alpha$ are shown in Table~\ref{table:alpha}.  Finally, the model achieves an average relative error of $0.005521 \pm 0.00316$.
+\vpara{Prediction performance.} We use 168 different networks as input data to evaluate the proposed model, with 10-fold cross validation. In order to avoid bias, we test the data 10 times, and get the predicted $\alpha$ for each network.  This model achieves average relative error $0.005521$ with standard deviation $0.00316$.  Some sample predictions are shown in Table~\ref{table:alpha}.
 
 %\subsection{Candidate graph generation}
 %
